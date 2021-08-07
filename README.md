@@ -1,2 +1,2 @@
-# booking-engine-sdk-java
+# iko-travel-java
 iko.travel inventory SDK in Java
