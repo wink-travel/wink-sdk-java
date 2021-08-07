@@ -27,7 +27,9 @@
     </properties>
 
     <modules>
+        <module>affiliate-sdk-java</module>
         <module>booking-engine-sdk-java</module>
+        <module>extranet-sdk-java</module>
     </modules>
 
     <dependencies>
