@@ -23,6 +23,7 @@
         <threeten.version>1.7.0</threeten.version>
         <threetenbp.version>1.5.1</threetenbp.version>
         <swagger.annotations.version>1.6.2</swagger.annotations.version>
+        <swagger3.annotations.version>2.1.10</swagger3.annotations.version>
     </properties>
 
     <modules>
@@ -57,10 +58,16 @@
             <version>${threetenbp.version}</version>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>io.swagger</groupId>-->
+<!--            <artifactId>swagger-annotations</artifactId>-->
+<!--            <version>${swagger.annotations.version}</version>-->
+<!--        </dependency>-->
+
         <dependency>
-            <groupId>io.swagger</groupId>
+            <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-annotations</artifactId>
-            <version>${swagger.annotations.version}</version>
+            <version>${swagger3.annotations.version}</version>
         </dependency>
 
         <!-- @Nullable annotation -->
