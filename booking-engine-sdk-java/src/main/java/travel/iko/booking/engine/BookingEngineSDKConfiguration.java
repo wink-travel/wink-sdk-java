@@ -1,8 +1,9 @@
 package travel.iko.booking.engine;
 
-import org.springframework.beans.factory.annotation.Value;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.reactive.function.client.WebClient;
 import travel.iko.booking.engine.api.BookingApi;
 import travel.iko.booking.engine.api.ByLookupApi;
 import travel.iko.booking.engine.api.ByPropertyApi;
@@ -11,21 +12,15 @@ import travel.iko.booking.engine.api.LookupApi;
 import travel.iko.booking.engine.api.RegistrationApi;
 import travel.iko.booking.engine.api.SessionApi;
 import travel.iko.booking.engine.invoker.ApiClient;
-import travel.iko.booking.engine.invoker.auth.OAuth;
 
+@RequiredArgsConstructor
 @Configuration
 public class BookingEngineSDKConfiguration {
-	@Value("${iko.travel.accesskey}")
-	private String accessKey;
+	private final WebClient webClient;
 
 	@Bean
 	public ApiClient apiClient() {
-		ApiClient apiClient = new ApiClient();
-
-		OAuth oauth = (OAuth) apiClient.getAuthentication("petstore_auth");
-		oauth.setAccessToken("special-key");
-
-		return apiClient;
+		return new ApiClient(this.webClient);
 	}
 
 	@Bean

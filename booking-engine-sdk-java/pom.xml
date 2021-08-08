@@ -46,4 +46,12 @@
             </plugin>
         </plugins>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>travel.iko</groupId>
+            <artifactId>oauth2-web-client</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+    </dependencies>
 </project>
