@@ -54,9 +54,9 @@ public class OAuth2WebClientConfiguration {
 
     @Bean
     ReactiveClientRegistrationRepository reactiveClientRegistrationRepository() {
-        return new InMemoryReactiveClientRegistrationRepository();
+        return new InMemoryReactiveClientRegistrationRepository(clientRegistration());
     }
-    
+
     @Bean
     ClientRegistration clientRegistration() {
         return ClientRegistration
