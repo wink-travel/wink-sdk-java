@@ -26,7 +26,13 @@
                         <configuration>
                             <inputSpec>${project.basedir}/src/main/resources/booking-engine.json</inputSpec>
                             <generatorName>java</generatorName>
+                            <generateApiDocumentation>false</generateApiDocumentation>
+                            <generateModelDocumentation>false</generateModelDocumentation>
+                            <generateApiTests>false</generateApiTests>
+                            <generateModelTests>false</generateModelTests>
+                            <generateModelDocumentation>false</generateModelDocumentation>
                             <configOptions>
+                                <additionalModelTypeAnnotations>@lombok.Builder @lombok.AllArgsConstructor @lombok.NoArgsConstructor</additionalModelTypeAnnotations>
                                 <sourceFolder>src/gen/java/main</sourceFolder>
                                 <apiPackage>travel.iko.booking.engine.api</apiPackage>
                                 <modelPackage>travel.iko.booking.engine.model</modelPackage>
@@ -51,7 +57,7 @@
         <dependency>
             <groupId>travel.iko</groupId>
             <artifactId>oauth2-web-client</artifactId>
-            <version>${parent.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
 </project>
