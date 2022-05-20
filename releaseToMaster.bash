@@ -50,7 +50,7 @@ git checkout develop
 git pull
 
 git rebase master
-git pull
+git pull --rebase
 
 git commit -a -m "Finalizing release on develop branch"
 git push origin develop:refs/heads/develop
