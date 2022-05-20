@@ -47,9 +47,10 @@ git push origin master:refs/heads/master
 
 echo "Going back to develop branch"
 git checkout develop
-git pull
 
 git rebase master
+git pull
+
 git commit -a -m "Finalizing release on develop branch"
 git push origin develop:refs/heads/develop
 
