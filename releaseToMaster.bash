@@ -24,14 +24,12 @@ git pull
 git checkout develop
 echo "Starting release process. It's about to get real!!"
 
-mvn -B gitflow:release-start -DskipTestProject=true
+mvn -B gitflow:release-start gitflow:release-finish -DskipTestProject=true
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
   echo "Something went wrong on line: ${BASH_LINENO[*]}"
   exit 1
 fi
-
-mvn -B gitflow:release-finish -DskipTestProject=true
 
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
