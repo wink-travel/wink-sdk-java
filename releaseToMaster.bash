@@ -49,7 +49,7 @@ echo "Going back to develop branch"
 git checkout develop
 git pull
 
-git merge master
+git merge master --no-edit -m "Merging CHANGELOG.md from master into develop branch" --strategy-option theirs
 git pull
 
 git commit -a -m "Finalizing release on develop branch"
