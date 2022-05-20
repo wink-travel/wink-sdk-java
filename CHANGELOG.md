@@ -2,6 +2,48 @@
 
 Changelog of wink-sdk-java.
 
+## 0.0.8 (2022-05-20)
+
+
+
+
+
+
+
+### Other changes
+
+**Merge branch 'release/0.0.8'**
+
+
+[9094c](https://github.com/wink-travel/wink-sdk-java/commit/9094c51f888142a) Bjorn Harvold *2022-05-20 08:14:30*
+
+**Update versions for release**
+
+
+[b5a6c](https://github.com/wink-travel/wink-sdk-java/commit/b5a6cb14291e796) Bjorn Harvold *2022-05-20 08:14:20*
+
+**Committing updated CHANGELOG.md to master branch**
+
+
+[8a4a6](https://github.com/wink-travel/wink-sdk-java/commit/8a4a6cd0136c302) Bjorn Harvold *2022-05-20 08:10:22*
+
+**Committing updated CHANGELOG.md to master branch**
+
+
+[25e86](https://github.com/wink-travel/wink-sdk-java/commit/25e867abebb73bd) Bjorn Harvold *2022-05-20 08:10:12*
+
+**Update for next development version**
+
+
+[bfded](https://github.com/wink-travel/wink-sdk-java/commit/bfdedd36b5ea08f) Bjorn Harvold *2022-05-20 08:10:00*
+
+**Merge tag '0.0.7' into develop**
+
+* Tag release 
+
+[6f3cb](https://github.com/wink-travel/wink-sdk-java/commit/6f3cbcb01e5dc77) Bjorn Harvold *2022-05-20 08:09:58*
+
+
 ## 0.0.7 (2022-05-20)
 
 
