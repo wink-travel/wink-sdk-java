@@ -31,12 +31,6 @@ if [ $STATUS -ne 0 ]; then
   exit 1
 fi
 
-STATUS=$?
-if [ $STATUS -ne 0 ]; then
-  echo "Something went wrong on line: ${BASH_LINENO[*]}"
-  exit 1
-fi
-
 echo "Checking out master branch"
 git checkout master
 
