@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>travel.wink</groupId>
-        <artifactId>wink-travel-sdk-java</artifactId>
+        <artifactId>wink-sdk-java</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>extranet-sdk-java</artifactId>
