@@ -17,14 +17,30 @@ mvn clean
 #  exit 1
 #fi
 
-echo "Synching remote master with local"
+echo "Sync-ing remote master with local"
 git checkout master
 git pull
 
 git checkout develop
 echo "Starting release process. It's about to get real!!"
 
-mvn -B gitflow:release-start gitflow:release-finish -DskipTestProject=true
+mvn -B gitflow:release-start -DskipTestProject=true
+STATUS=$?
+if [ $STATUS -ne 0 ]; then
+  echo "Something went wrong on line: ${BASH_LINENO[*]}"
+  exit 1
+fi
+
+echo "Updating CHANGELOG.md..."
+mvn git-changelog-maven-plugin:git-changelog
+STATUS=$?
+if [ $STATUS -ne 0 ]; then
+  echo "Something went wrong on line: ${BASH_LINENO[*]}"
+  exit 1
+fi
+
+mvn -B gitflow:release-finish -DskipTestProject=true
+
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
   echo "Something went wrong on line: ${BASH_LINENO[*]}"
@@ -36,6 +52,7 @@ git push origin develop:refs/heads/develop
 
 echo "Committing changes to master branch"
 git checkout master
+
 git commit -a -m "Committing changes to master branch"
 git push origin master:refs/heads/master
 
