@@ -7,10 +7,10 @@
         <artifactId>wink-travel-sdk-java</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>extranet-sdk-java</artifactId>
+    <artifactId>payment-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <name>Extranet SDK Java</name>
-    <description>Java SDK for the wink Extranet API</description>
+    <name>Payment SDK Java</name>
+    <description>Java SDK for the wink Payment API</description>
 
     <build>
         <plugins>
@@ -32,10 +32,11 @@
                             <generateModelTests>false</generateModelTests>
                             <generateModelDocumentation>false</generateModelDocumentation>
                             <configOptions>
+                                <additionalModelTypeAnnotations>@lombok.Builder @lombok.AllArgsConstructor @lombok.NoArgsConstructor</additionalModelTypeAnnotations>
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <apiPackage>travel.wink.extranet.api</apiPackage>
-                                <modelPackage>travel.wink.extranet.model</modelPackage>
-                                <invokerPackage>travel.wink.extranet.invoker</invokerPackage>
+                                <apiPackage>travel.wink.payment.api</apiPackage>
+                                <modelPackage>travel.wink.payment.model</modelPackage>
+                                <invokerPackage>travel.wink.payment.invoker</invokerPackage>
                                 <library>webclient</library>
                                 <dateLibrary>java8</dateLibrary>
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>

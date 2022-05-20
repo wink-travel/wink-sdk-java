@@ -3,14 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>travel.iko</groupId>
-        <artifactId>iko-travel-sdk-java</artifactId>
+        <groupId>travel.wink</groupId>
+        <artifactId>wink-travel-sdk-java</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>booking-engine-sdk-java</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <name>Booking Engine SDK Java</name>
-    <description>Java SDK for the Booking Engine API</description>
+    <description>Java SDK for the wink Booking Engine API</description>
 
     <build>
         <plugins>
@@ -24,7 +24,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/src/main/resources/booking-engine.json</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/openapi-spec.json</inputSpec>
                             <generatorName>java</generatorName>
                             <generateApiDocumentation>false</generateApiDocumentation>
                             <generateModelDocumentation>false</generateModelDocumentation>
@@ -34,9 +34,9 @@
                             <configOptions>
                                 <additionalModelTypeAnnotations>@lombok.Builder @lombok.AllArgsConstructor @lombok.NoArgsConstructor</additionalModelTypeAnnotations>
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <apiPackage>travel.iko.booking.engine.api</apiPackage>
-                                <modelPackage>travel.iko.booking.engine.model</modelPackage>
-                                <invokerPackage>travel.iko.booking.engine.invoker</invokerPackage>
+                                <apiPackage>travel.wink.booking.engine.api</apiPackage>
+                                <modelPackage>travel.wink.booking.engine.model</modelPackage>
+                                <invokerPackage>travel.wink.booking.engine.invoker</invokerPackage>
                                 <library>webclient</library>
                                 <dateLibrary>java8</dateLibrary>
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>
@@ -55,7 +55,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>travel.iko</groupId>
+            <groupId>travel.wink</groupId>
             <artifactId>oauth2-web-client</artifactId>
             <version>${project.parent.version}</version>
         </dependency>

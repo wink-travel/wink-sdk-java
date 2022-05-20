@@ -8,20 +8,20 @@
         <version>2.5.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>travel.iko</groupId>
-    <artifactId>iko-travel-sdk-java</artifactId>
+    <groupId>travel.wink</groupId>
+    <artifactId>wink-sdk-java</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>iko.travel Java SDK</name>
-    <description>Collection of SDKs for all iko.travel APIs</description>
+    <name>wink.travel Java SDK</name>
+    <description>Java libraries for all wink APIs.</description>
 
     <developers>
         <developer>
             <id>1</id>
             <name>Bjorn Harvold</name>
-            <email>bjorn@iko.travel</email>
-            <url>https://iko.travel</url>
-            <organization>TRAVELIKO SINGAPORE PTE.LTD.</organization>
+            <email>bjorn@wink.travel</email>
+            <url>https://wink.travel</url>
+            <organization>TripPay Corporation USA</organization>
             <roles>
                 <role>CTO</role>
             </roles>
@@ -29,15 +29,15 @@
     </developers>
 
     <scm>
-        <connection>scm:git:ssh://github.com:iko-travel/iko-travel-sdk-java.git</connection>
-        <developerConnection>scm:git:ssh://github.com:iko-travel/iko-travel-sdk-java.git</developerConnection>
-        <url>https://github.com/iko-travel/iko-travel-sdk-java</url>
+        <connection>scm:git:ssh://github.com:wink-travel/wink-travel-sdk-java.git</connection>
+        <developerConnection>scm:git:ssh://github.com:wink-travel/wink-travel-sdk-java.git</developerConnection>
+        <url>https://github.com/wink-travel/wink-travel-sdk-java</url>
         <tag>HEAD</tag>
     </scm>
 
     <properties>
         <java.version>1.8</java.version>
-        <openapi.generator.version>6.0.0-SNAPSHOT</openapi.generator.version>
+        <openapi.generator.version>6.0.0-beta</openapi.generator.version>
         <jackson.databind.nullable.version>0.2.0</jackson.databind.nullable.version>
         <jackson.threetenbp.version>2.12.2</jackson.threetenbp.version>
         <jsr305.version>3.0.2</jsr305.version>
@@ -51,6 +51,7 @@
         <module>affiliate-sdk-java</module>
         <module>booking-engine-sdk-java</module>
         <module>extranet-sdk-java</module>
+		<module>payment-sdk-java</module>
         <module>oauth2-web-client</module>
     </modules>
 

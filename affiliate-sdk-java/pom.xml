@@ -3,14 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>travel.iko</groupId>
-        <artifactId>iko-travel-sdk-java</artifactId>
+        <groupId>travel.wink</groupId>
+        <artifactId>wink-travel-sdk-java</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>affiliate-sdk-java</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <name>Affiliate SDK Java</name>
-    <description>Java SDK for the Extranet API</description>
+    <description>Java SDK for the wink Affiliate API</description>
 
     <build>
         <plugins>
@@ -24,7 +24,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/src/main/resources/affiliate.json</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/openapi-spec.json</inputSpec>
                             <generatorName>java</generatorName>
                             <generateApiDocumentation>false</generateApiDocumentation>
                             <generateModelDocumentation>false</generateModelDocumentation>
@@ -33,9 +33,9 @@
                             <generateModelDocumentation>false</generateModelDocumentation>
                             <configOptions>
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <apiPackage>travel.iko.affiliate.api</apiPackage>
-                                <modelPackage>travel.iko.affiliate.model</modelPackage>
-                                <invokerPackage>travel.iko.affiliate.invoker</invokerPackage>
+                                <apiPackage>travel.wink.affiliate.api</apiPackage>
+                                <modelPackage>travel.wink.affiliate.model</modelPackage>
+                                <invokerPackage>travel.wink.affiliate.invoker</invokerPackage>
                                 <library>webclient</library>
                                 <dateLibrary>java8</dateLibrary>
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>
@@ -54,7 +54,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>travel.iko</groupId>
+            <groupId>travel.wink</groupId>
             <artifactId>oauth2-web-client</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
