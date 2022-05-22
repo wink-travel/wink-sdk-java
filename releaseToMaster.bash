@@ -15,7 +15,7 @@ git pull
 
 git checkout develop
 mvn versions:set -DnewVersion="$(npx git-changelog-command-line --print-next-version)" -DnextSnapshot=true -DgenerateBackupPoms=false
-git commit -a -m "Committing updated pom.xml files with semantic versioning using Conventional Commits."
+git commit -a -m ":bookmark: build: Committing updated pom.xml files with semantic versioning using Conventional Commits."
 
 echo "Starting release process..."
 
@@ -34,7 +34,7 @@ if [ $STATUS -ne 0 ]; then
   exit 1
 fi
 
-git commit -a -m "Committing updated CHANGELOG.md"
+git commit -a -m ":memo: chore: Committing updated CHANGELOG.md"
 
 mvn -B gitflow:release-finish -DskipTestProject=true
 STATUS=$?
