@@ -2,6 +2,68 @@
 
 Changelog of wink-sdk-java.
 
+## 0.0.11 (2022-05-22)
+
+
+
+
+
+
+
+### Other changes
+
+**Merge branch 'release/0.0.11'**
+
+
+[adcd5](https://github.com/wink-travel/wink-sdk-java/commit/adcd59b1b7751bd) Bjorn Harvold *2022-05-22 11:16:57*
+
+**Committing updated CHANGELOG.md**
+
+
+[5915e](https://github.com/wink-travel/wink-sdk-java/commit/5915ec5b091d053) Bjorn Harvold *2022-05-22 11:16:45*
+
+**Update versions for release**
+
+
+[816cf](https://github.com/wink-travel/wink-sdk-java/commit/816cf771137be17) Bjorn Harvold *2022-05-22 11:16:44*
+
+**Committing updated pom.xml files with semantic versioning using Conventional Commits.**
+
+
+[dcf5d](https://github.com/wink-travel/wink-sdk-java/commit/dcf5df5fdfa82ce) Bjorn Harvold *2022-05-22 11:16:38*
+
+**:memo: build(WSJ-2): updated readme and set some default config props.**
+
+
+[ef7f4](https://github.com/wink-travel/wink-sdk-java/commit/ef7f4a2d7be9433) Bjorn Harvold *2022-05-22 11:15:33*
+
+**:construction_worker: build(WSJ-2): compiles again.**
+
+
+[419d3](https://github.com/wink-travel/wink-sdk-java/commit/419d3dc2e135ce0) Bjorn Harvold *2022-05-22 10:39:15*
+
+**Merging CHANGELOG.md from master into develop branch**
+
+
+[2e16f](https://github.com/wink-travel/wink-sdk-java/commit/2e16f96cd01cf0b) Bjorn Harvold *2022-05-20 08:22:41*
+
+**Committing updated CHANGELOG.md to master branch**
+
+
+[606ca](https://github.com/wink-travel/wink-sdk-java/commit/606ca96bd9045d7) Bjorn Harvold *2022-05-20 08:22:34*
+
+**Update for next development version**
+
+
+[937f5](https://github.com/wink-travel/wink-sdk-java/commit/937f5234e0c2f6c) Bjorn Harvold *2022-05-20 08:22:22*
+
+**Merge tag '0.0.9' into develop**
+
+* Tag release 
+
+[0ddaf](https://github.com/wink-travel/wink-sdk-java/commit/0ddaf4f520048c8) Bjorn Harvold *2022-05-20 08:22:21*
+
+
 ## 0.0.9 (2022-05-20)
 
 
