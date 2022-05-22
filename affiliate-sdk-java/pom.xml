@@ -32,6 +32,7 @@
                             <generateModelTests>false</generateModelTests>
                             <generateModelDocumentation>false</generateModelDocumentation>
                             <configOptions>
+                                <!-- <additionalModelTypeAnnotations>@lombok.Builder</additionalModelTypeAnnotations> -->
                                 <sourceFolder>src/gen/java/main</sourceFolder>
                                 <apiPackage>travel.wink.affiliate.api</apiPackage>
                                 <modelPackage>travel.wink.affiliate.model</modelPackage>

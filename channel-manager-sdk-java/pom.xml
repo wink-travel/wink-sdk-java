@@ -7,10 +7,10 @@
         <artifactId>wink-sdk-java</artifactId>
         <version>0.0.10-SNAPSHOT</version>
     </parent>
-    <artifactId>payment-sdk-java</artifactId>
+    <artifactId>channel-manager-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <name>Payment SDK Java</name>
-    <description>Java SDK for the wink Payment API</description>
+    <name>Channel Manager SDK Java</name>
+    <description>Java SDK for the channel manager integrators wanting to communicate with the Wink platform</description>
 
     <build>
         <plugins>
@@ -34,9 +34,9 @@
                             <configOptions>
                                 <!-- <additionalModelTypeAnnotations>@lombok.Builder</additionalModelTypeAnnotations> -->
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <apiPackage>travel.wink.payment.api</apiPackage>
-                                <modelPackage>travel.wink.payment.model</modelPackage>
-                                <invokerPackage>travel.wink.payment.invoker</invokerPackage>
+                                <apiPackage>travel.wink.channel.manager.api</apiPackage>
+                                <modelPackage>travel.wink.channel.manager.model</modelPackage>
+                                <invokerPackage>travel.wink.channel.manager.invoker</invokerPackage>
                                 <library>webclient</library>
                                 <dateLibrary>java8</dateLibrary>
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>

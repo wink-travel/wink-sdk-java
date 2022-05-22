@@ -32,7 +32,7 @@
                             <generateModelTests>false</generateModelTests>
                             <generateModelDocumentation>false</generateModelDocumentation>
                             <configOptions>
-                                <additionalModelTypeAnnotations>@lombok.Builder @lombok.AllArgsConstructor @lombok.NoArgsConstructor</additionalModelTypeAnnotations>
+                                <!-- <additionalModelTypeAnnotations>@lombok.Builder</additionalModelTypeAnnotations> -->
                                 <sourceFolder>src/gen/java/main</sourceFolder>
                                 <apiPackage>travel.wink.booking.engine.api</apiPackage>
                                 <modelPackage>travel.wink.booking.engine.model</modelPackage>

@@ -36,7 +36,7 @@
     </scm>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
         <buildnumber.maven.plugin.version>1.4</buildnumber.maven.plugin.version>
         <conventional-commits-maven-plugin.version>1.92</conventional-commits-maven-plugin.version>
         <gitflow.maven.plugin>1.18.0</gitflow.maven.plugin>
@@ -55,7 +55,7 @@
         <maven.scm.plugin.version>1.12.0</maven.scm.plugin.version>
         <maven.source.plugin.version>3.0.1</maven.source.plugin.version>
         <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
-        <openapi.generator.version>6.0.0-beta</openapi.generator.version>
+        <openapi.generator.version>6.0.0-SNAPSHOT</openapi.generator.version>
         <swagger.annotations.version>1.6.2</swagger.annotations.version>
         <swagger3.annotations.version>2.1.10</swagger3.annotations.version>
         <threeten.version>1.7.0</threeten.version>
@@ -66,6 +66,7 @@
     <modules>
         <module>affiliate-sdk-java</module>
         <module>booking-engine-sdk-java</module>
+        <module>channel-manager-sdk-java</module>
         <module>extranet-sdk-java</module>
 		<module>payment-sdk-java</module>
         <module>oauth2-web-client</module>
@@ -80,7 +81,6 @@
                 <executions>
                     <execution>
                         <id>GenerateGitChangelog</id>
-                        <phase>generate-sources</phase>
                         <goals>
                             <goal>git-changelog</goal>
                         </goals>
@@ -219,6 +219,12 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>${maven.gpg.version}</version>
             </plugin>
         </plugins>
     </build>
