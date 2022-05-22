@@ -21,7 +21,7 @@ import org.springframework.web.reactive.function.client.WebClient;
  */
 @Configuration
 public class OAuth2WebClientConfiguration {
-    @Value("${wink.travel.token-uri}")
+    @Value("${wink.travel.token-uri:https://iam.wink.travel/oauth/token}")
     private String tokenUri;
     
     @Value("${wink.travel.client.id}")
@@ -30,7 +30,7 @@ public class OAuth2WebClientConfiguration {
     @Value("${wink.travel.client.secret}")
     private String clientSecret;
     
-    @Value("${wink.travel.scopes}")
+    @Value("${wink.travel.scopes:inventory.read,inventory.write,inventory.remove,payment.read,payment.write,payment.remove}")
     private String scope;
 
     @Bean(name = "oauth2WebClient")
