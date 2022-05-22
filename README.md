@@ -1,6 +1,6 @@
 # Wink Java SDK
 
-
+Welcome to the Java SDK that enables you to communicate with all that the Wink platform has to offer.
 
 ## Getting started
 This SDK contains 5 unique libraries you can leverage to communicate with the Wink platform.
