@@ -9,6 +9,8 @@ Download libraries from Maven Central Repository.
 
 ### Affiliate
 
+[API documentation](https://api.wink.travel/docs?api=affiliate)
+
 The Affiliate API exposes endpoints for affiliates who want browse available platform inventory and then prepare that inventory for sale, such as shareable links, grids, cards, maps etc. An affiliate can also track their ranking on our leaderboards as well as detail platform-level analytics.
 
 ```
@@ -21,6 +23,8 @@ The Affiliate API exposes endpoints for affiliates who want browse available pla
 ```
 
 ### Booking engine
+
+[API documentation](https://api.wink.travel/docs?api=booking-engine)
 
 The Booking Engine API exposes search functionality for finding available hotels to book. Hotels can be filtered on a variety of common filters as well as wink-only filters. The API also supports creating bookings as either a platform merchant or agent. 
 
@@ -35,6 +39,8 @@ The Booking Engine API exposes search functionality for finding available hotels
 
 ### Channel manager
 
+[API documentation](https://api.wink.travel/docs?api=channel-manager)
+
 The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the wink platform for one of their properties.  
 
 ```
@@ -48,6 +54,8 @@ The Channel Manager API enables external channel manager partners to map, exchan
 
 ### Extranet
 
+[API documentation](https://api.wink.travel/docs?api=extranet)
+
 The Extranet API exposes endpoints for managing all aspects of a property on our platform. A hotelier can manage content, rates, sales channels for every type of inventory we offer as well as gain valuable platform-level insight into the health of their property.
 
 ```
@@ -60,6 +68,8 @@ The Extranet API exposes endpoints for managing all aspects of a property on our
 ```
 
 ### Payment
+
+[API documentation](https://api.trippay.io/docs?api=contract)
 
 The Payment API exposes endpoints for affiliates and hotels to track bookings, analytics and funds availability. They can also choose to withdraw available funds to their bank account.
 
