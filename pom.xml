@@ -51,14 +51,15 @@
         <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
         <maven.compiler.plugin.version>3.10.1</maven.compiler.plugin.version>
         <maven.dependency.plugin.version>3.2.0</maven.dependency.plugin.version>
-        <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
+        <maven.deploy.plugin.version>3.0.0-M2</maven.deploy.plugin.version>
         <maven.gpg.version>1.6</maven.gpg.version>
         <maven.javadoc.plugin.version>3.3.1</maven.javadoc.plugin.version>
-        <maven.release.plugin.version>3.0.0-M4</maven.release.plugin.version>
+        <maven.release.plugin.version>3.0.0-M5</maven.release.plugin.version>
         <maven.resources.plugin.version>3.2.0</maven.resources.plugin.version>
         <maven.scm.plugin.version>1.12.0</maven.scm.plugin.version>
         <maven.source.plugin.version>3.0.1</maven.source.plugin.version>
         <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
+        <nexus.staging.maven.plugin>1.6.13</nexus.staging.maven.plugin>
         <openapi.generator.version>6.0.0-SNAPSHOT</openapi.generator.version>
         <spring.version>5.3.20</spring.version>
         <spring.security.version>5.7.1</spring.security.version>
@@ -118,10 +119,34 @@
                 <artifactId>git-commit-id-maven-plugin</artifactId>
                 <version>${git.commit.plugin.version}</version>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>${maven.deploy.plugin.version}</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>${nexus.staging.maven.plugin}</version>
+                <executions>
+                    <execution>
+                        <id>default-deploy</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+<!--                <configuration>-->
+<!--                    <serverId>nexus</serverId>-->
+<!--                    <nexusUrl>http://localhost:8081/nexus/</nexusUrl>-->
+<!--                    <skipStaging>true</skipStaging>-->
+<!--                </configuration>-->
             </plugin>
 
             <plugin>
