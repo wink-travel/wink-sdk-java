@@ -3,6 +3,7 @@ package travel.wink.booking.engine;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.web.reactive.function.client.WebClient;
 import travel.wink.booking.engine.api.BookingApi;
 import travel.wink.booking.engine.api.InventoryApi;

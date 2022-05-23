@@ -13,23 +13,20 @@ import travel.wink.extranet.api.AnnouncementApi;
 import travel.wink.extranet.api.AttractionApi;
 import travel.wink.extranet.api.BookingApi;
 import travel.wink.extranet.api.CalDavApi;
-import travel.wink.extranet.api.CalendarApi;
 import travel.wink.extranet.api.CancellationPolicyApi;
 import travel.wink.extranet.api.ChannelManagerApi;
 import travel.wink.extranet.api.ContactsApi;
 import travel.wink.extranet.api.DailyRateApi;
-import travel.wink.extranet.api.GeoIpApi;
 import travel.wink.extranet.api.GeoLocationApi;
 import travel.wink.extranet.api.GeoNameApi;
-import travel.wink.extranet.api.GreenIndexQuestionnaireApi;
 import travel.wink.extranet.api.GuestRoomApi;
-import travel.wink.extranet.api.HotelierApi;
 import travel.wink.extranet.api.InventoryApi;
 import travel.wink.extranet.api.LeaderboardApi;
 import travel.wink.extranet.api.LifestyleApi;
 import travel.wink.extranet.api.MasterRateApi;
 import travel.wink.extranet.api.MediaApi;
 import travel.wink.extranet.api.MeetingRoomApi;
+import travel.wink.extranet.api.NotificationApi;
 import travel.wink.extranet.api.OnboardingApi;
 import travel.wink.extranet.api.PackageApi;
 import travel.wink.extranet.api.PlaceApi;
@@ -43,7 +40,7 @@ import travel.wink.extranet.api.ReferenceApi;
 import travel.wink.extranet.api.RestaurantApi;
 import travel.wink.extranet.api.ReviewApi;
 import travel.wink.extranet.api.SalesChannelsApi;
-import travel.wink.extranet.api.ServicesApi;
+import travel.wink.extranet.api.SchedulerApi;
 import travel.wink.extranet.api.SocialNetworkApi;
 import travel.wink.extranet.api.SpaApi;
 import travel.wink.extranet.api.TestApi;
@@ -105,11 +102,6 @@ public class ExtranetSDKConfiguration {
 	}
 
 	@Bean
-	public CalendarApi calendarApi() {
-		return new CalendarApi(apiClient());
-	}
-
-	@Bean
 	public CancellationPolicyApi cancellationPolicyApi() {
 		return new CancellationPolicyApi(apiClient());
 	}
@@ -145,11 +137,6 @@ public class ExtranetSDKConfiguration {
 	}
 
 	@Bean
-	public GeoIpApi geoIpApi() {
-		return new GeoIpApi(apiClient());
-	}
-
-	@Bean
 	public GeoLocationApi geoLocationApi() {
 		return new GeoLocationApi(apiClient());
 	}
@@ -160,18 +147,13 @@ public class ExtranetSDKConfiguration {
 	}
 
 	@Bean
-	public GreenIndexQuestionnaireApi greenIndexQuestionnaireApi() {
-		return new GreenIndexQuestionnaireApi(apiClient());
-	}
-
-	@Bean
 	public GuestRoomApi guestRoomApi() {
 		return new GuestRoomApi(apiClient());
 	}
 
 	@Bean
-	public HotelierApi hotelierApi() {
-		return new HotelierApi(apiClient());
+	public NotificationApi notificationApi() {
+		return new NotificationApi(apiClient());
 	}
 
 	@Bean
@@ -260,8 +242,8 @@ public class ExtranetSDKConfiguration {
 	}
 
 	@Bean
-	public ServicesApi servicesApi() {
-		return new ServicesApi(apiClient());
+	public SchedulerApi schedulerApi() {
+		return new SchedulerApi(apiClient());
 	}
 
 	@Bean
