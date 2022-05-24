@@ -2,6 +2,88 @@
 
 Changelog of wink-sdk-java.
 
+## 19.0.11 (2022-05-23)
+
+
+
+
+
+
+
+### Other changes
+
+**Merge branch 'release/19.0.11'**
+
+
+[f19f8](https://github.com/wink-travel/wink-sdk-java/commit/f19f815f4500926) Bjorn Harvold *2022-05-23 08:38:45*
+
+**:memo: chore: Committing updated CHANGELOG.md**
+
+
+[394c8](https://github.com/wink-travel/wink-sdk-java/commit/394c82357e72ff1) Bjorn Harvold *2022-05-23 08:38:33*
+
+**Update versions for release**
+
+
+[afcf9](https://github.com/wink-travel/wink-sdk-java/commit/afcf90192d8bae3) Bjorn Harvold *2022-05-23 08:38:31*
+
+**:bookmark: build: Committing updated pom.xml files with semantic versioning using Conventional Commits.**
+
+
+[50737](https://github.com/wink-travel/wink-sdk-java/commit/5073765ef0063a2) Bjorn Harvold *2022-05-23 08:38:25*
+
+**:building_construction: build(WSJ-2): updated Extranet APIs to be more context driven**
+
+
+[b3407](https://github.com/wink-travel/wink-sdk-java/commit/b3407dc9de7e1c5) Bjorn Harvold *2022-05-23 08:37:56*
+
+**:building_construction: build(WSJ-2): using Nexus's deploy plugin again**
+
+
+[9f4e8](https://github.com/wink-travel/wink-sdk-java/commit/9f4e8480e9e7c39) Bjorn Harvold *2022-05-23 03:37:38*
+
+**:building_construction: build(WSJ-2): trying default deploy plugin**
+
+
+[fa3d9](https://github.com/wink-travel/wink-sdk-java/commit/fa3d944e65cc103) Bjorn Harvold *2022-05-23 03:36:47*
+
+**:building_construction: build(WSJ-2): added new Sonatype URL**
+
+
+[012ac](https://github.com/wink-travel/wink-sdk-java/commit/012ac60bb5aff77) Bjorn Harvold *2022-05-23 03:32:57*
+
+**:building_construction: build(WSJ-2): removed unused tests**
+
+
+[a3723](https://github.com/wink-travel/wink-sdk-java/commit/a3723dfedd22c2b) Bjorn Harvold *2022-05-23 03:24:06*
+
+**:building_construction: build(WSJ-2): added nexus deploy plugin**
+
+
+[98100](https://github.com/wink-travel/wink-sdk-java/commit/98100db08ee870f) Bjorn Harvold *2022-05-23 03:22:08*
+
+**:building_construction: build(WSJ-2): added javax.annoations-api as dep**
+
+
+[6b6f9](https://github.com/wink-travel/wink-sdk-java/commit/6b6f95beeb3494e) Bjorn Harvold *2022-05-22 12:12:12*
+
+**:building_construction: build(WSJ-2): removed Spring Boot**
+
+
+[6a2f0](https://github.com/wink-travel/wink-sdk-java/commit/6a2f02c6f94bf1c) Bjorn Harvold *2022-05-22 12:06:48*
+
+**Update for next development version**
+
+
+[4ab2c](https://github.com/wink-travel/wink-sdk-java/commit/4ab2c8e45049397) Bjorn Harvold *2022-05-22 11:36:06*
+
+**Merge tag '0.0.15' into develop**
+
+* Tag release 
+
+[681aa](https://github.com/wink-travel/wink-sdk-java/commit/681aaefff2b98b3) Bjorn Harvold *2022-05-22 11:36:05*
+
+
 ## 0.0.15 (2022-05-22)
 
 
