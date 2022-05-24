@@ -135,6 +135,12 @@
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>${nexus.staging.maven.plugin}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>${sonatypeOssDistMgmtSnapshotsUrl}</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
                 <executions>
                     <execution>
                         <id>default-deploy</id>
@@ -257,6 +263,14 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>${sonatypeOssDistMgmtSnapshotsUrl}content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
