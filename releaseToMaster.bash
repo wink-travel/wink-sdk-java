@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Copyright (c) 2021. Traveliko PTE.LTD. All rights Reserved.
+# Copyright (c) 2021. wink.travel. All rights Reserved.
 #
 
 echo "Releasing wink-sdk-java..."
@@ -49,9 +49,15 @@ echo "Pushing master to origin"
 git checkout master
 git push origin master:refs/heads/master
 
+echo "Pushing release artifacts to Sonatype..."
+mvn clean deploy -Psonatype-oss-release
+
 git checkout develop
 
 echo "Pushing develop to origin"
 git push origin develop:refs/heads/develop
+
+echo "Pushing snapshot artifacts to Sonatype..."
+mvn clean deploy -Psonatype-oss-release
 
 echo "Release SUCCESS"
