@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Copyright (c) 2021. Traveliko PTE.LTD. All rights Reserved.
+# Copyright (c) 2021. wink.travel. All rights Reserved.
 #
 
 echo "Releasing wink-sdk-java..."
