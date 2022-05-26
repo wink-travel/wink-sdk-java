@@ -110,7 +110,7 @@ The Extranet API exposes endpoints for managing all aspects of a property on our
 
 #### Usage
 
-Using Spring, @Import(ExtranetSDKConfiguration.class) or run a component scan over `travel.wink.extrant`. That will give you access to the following Spring Beans:
+Using Spring, @Import(ExtranetSDKConfiguration.class) or run a component scan over `travel.wink.extranet`. That will give you access to the following Spring Beans:
 
 - AccessApi: Manage which users get to manage your properties with the Access API.
 - ActivityApi: Manage activities guests can book / view along with their room with the Activity API.
