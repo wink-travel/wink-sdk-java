@@ -34,9 +34,9 @@
                             <configOptions>
                                 <!-- <additionalModelTypeAnnotations>@lombok.Builder</additionalModelTypeAnnotations> -->
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <apiPackage>travel.wink.extranet.api</apiPackage>
-                                <modelPackage>travel.wink.extranet.model</modelPackage>
-                                <invokerPackage>travel.wink.extranet.invoker</invokerPackage>
+                                <apiPackage>travel.wink.sdk.extranet.api</apiPackage>
+                                <modelPackage>travel.wink.sdk.extranet.model</modelPackage>
+                                <invokerPackage>travel.wink.sdk.extranet.invoker</invokerPackage>
                                 <library>webclient</library>
                                 <dateLibrary>java8</dateLibrary>
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>

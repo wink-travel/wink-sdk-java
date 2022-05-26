@@ -34,9 +34,9 @@
                             <configOptions>
                                 <!-- <additionalModelTypeAnnotations>@lombok.Builder</additionalModelTypeAnnotations> -->
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <apiPackage>travel.wink.channel.manager.api</apiPackage>
-                                <modelPackage>travel.wink.channel.manager.model</modelPackage>
-                                <invokerPackage>travel.wink.channel.manager.invoker</invokerPackage>
+                                <apiPackage>travel.wink.sdk.channel.manager.api</apiPackage>
+                                <modelPackage>travel.wink.sdk.channel.manager.model</modelPackage>
+                                <invokerPackage>travel.wink.sdk.channel.manager.invoker</invokerPackage>
                                 <library>webclient</library>
                                 <dateLibrary>java8</dateLibrary>
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>

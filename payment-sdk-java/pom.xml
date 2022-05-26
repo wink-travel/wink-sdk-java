@@ -34,9 +34,9 @@
                             <configOptions>
                                 <!-- <additionalModelTypeAnnotations>@lombok.Builder</additionalModelTypeAnnotations> -->
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <apiPackage>travel.wink.payment.api</apiPackage>
-                                <modelPackage>travel.wink.payment.model</modelPackage>
-                                <invokerPackage>travel.wink.payment.invoker</invokerPackage>
+                                <apiPackage>travel.wink.sdk.payment.api</apiPackage>
+                                <modelPackage>travel.wink.sdk.payment.model</modelPackage>
+                                <invokerPackage>travel.wink.sdk.payment.invoker</invokerPackage>
                                 <library>webclient</library>
                                 <dateLibrary>java8</dateLibrary>
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>

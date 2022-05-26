@@ -34,9 +34,9 @@
                             <configOptions>
                                 <!-- <additionalModelTypeAnnotations>@lombok.Builder</additionalModelTypeAnnotations> -->
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <apiPackage>travel.wink.affiliate.api</apiPackage>
-                                <modelPackage>travel.wink.affiliate.model</modelPackage>
-                                <invokerPackage>travel.wink.affiliate.invoker</invokerPackage>
+                                <apiPackage>travel.wink.sdk.affiliate.api</apiPackage>
+                                <modelPackage>travel.wink.sdk.affiliate.model</modelPackage>
+                                <invokerPackage>travel.wink.sdk.affiliate.invoker</invokerPackage>
                                 <library>webclient</library>
                                 <dateLibrary>java8</dateLibrary>
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>
