@@ -20,8 +20,10 @@ git pull
 
 git checkout develop
 newVersion=`npx git-changelog-command-line --print-next-version --major-version-pattern BREAKING --minor-version-pattern feat`
+echo "New semantic version using Conventional Commits: $newVersion"
+
 mvn versions:set -DnewVersion="$newVersion" -DnextSnapshot=true -DgenerateBackupPoms=false
-git commit -a -m ":bookmark: build: Committing updated pom.xml files with semantic versioning using Conventional Commits."
+git commit -a -m ":bookmark: build: Committing updated pom.xml files."
 
 echo "Starting release process..."
 
