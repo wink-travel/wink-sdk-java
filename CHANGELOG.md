@@ -2,6 +2,69 @@
 
 Changelog of wink-sdk-java.
 
+## 19.0.15 (2022-05-26)
+
+
+
+
+
+
+
+### Other changes
+
+**Merge branch 'release/19.0.15'**
+
+
+[bf95a](https://github.com/wink-travel/wink-sdk-java/commit/bf95ab2dccf3a04) Bjorn Harvold *2022-05-26 14:47:06*
+
+**:memo: chore: Committing updated CHANGELOG.md**
+
+
+[f675e](https://github.com/wink-travel/wink-sdk-java/commit/f675e02c46887f7) Bjorn Harvold *2022-05-26 14:46:55*
+
+**Update versions for release**
+
+
+[172e0](https://github.com/wink-travel/wink-sdk-java/commit/172e00190f75f6e) Bjorn Harvold *2022-05-26 14:46:53*
+
+**:bookmark: build: Committing updated pom.xml files with semantic versioning using Conventional Commits.**
+
+
+[124a1](https://github.com/wink-travel/wink-sdk-java/commit/124a128b21e5bf3) Bjorn Harvold *2022-05-26 14:46:47*
+
+**:construction_worker: build: changed classpath**
+
+* BREAKING CHANGE: Updated root classpath. Before: travel.wink. After: travel.wink.sdk. 
+
+[540f8](https://github.com/wink-travel/wink-sdk-java/commit/540f828bf8c27e8) Bjorn Harvold *2022-05-26 14:46:27*
+
+**:recycle: refactor: added sdk to the root classpath**
+
+
+[75d09](https://github.com/wink-travel/wink-sdk-java/commit/75d09431f0ecc76) Bjorn Harvold *2022-05-26 14:42:23*
+
+**:memo: doc(WSJ-2): fixed typo**
+
+
+[df8bc](https://github.com/wink-travel/wink-sdk-java/commit/df8bca9f33c302f) Bjorn Harvold *2022-05-26 06:33:53*
+
+**:building_construction: build(WSJ-2): added deploy step in release**
+
+
+[68118](https://github.com/wink-travel/wink-sdk-java/commit/681188ce582df57) Bjorn Harvold *2022-05-24 06:08:32*
+
+**Update for next development version**
+
+
+[f14a6](https://github.com/wink-travel/wink-sdk-java/commit/f14a6e892c83768) Bjorn Harvold *2022-05-24 05:52:37*
+
+**Merge tag '19.0.13' into develop**
+
+* Tag release 
+
+[e2489](https://github.com/wink-travel/wink-sdk-java/commit/e2489c1d1c1616a) Bjorn Harvold *2022-05-24 05:52:36*
+
+
 ## 19.0.13 (2022-05-24)
 
 
