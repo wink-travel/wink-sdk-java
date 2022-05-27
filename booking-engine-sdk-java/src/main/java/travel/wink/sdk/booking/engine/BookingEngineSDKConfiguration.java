@@ -1,15 +1,14 @@
-package travel.wink.booking.engine;
+package travel.wink.sdk.booking.engine;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
 import org.springframework.web.reactive.function.client.WebClient;
-import travel.wink.booking.engine.api.BookingApi;
-import travel.wink.booking.engine.api.InventoryApi;
-import travel.wink.booking.engine.api.LookupApi;
-import travel.wink.booking.engine.api.ReferenceApi;
-import travel.wink.booking.engine.invoker.ApiClient;
+import travel.wink.sdk.booking.engine.api.BookingApi;
+import travel.wink.sdk.booking.engine.api.InventoryApi;
+import travel.wink.sdk.booking.engine.api.LookupApi;
+import travel.wink.sdk.booking.engine.api.ReferenceApi;
+import travel.wink.sdk.booking.engine.invoker.ApiClient;
 
 @RequiredArgsConstructor
 @Configuration

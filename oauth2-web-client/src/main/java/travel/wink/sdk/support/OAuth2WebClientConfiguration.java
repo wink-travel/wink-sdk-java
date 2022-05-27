@@ -1,4 +1,4 @@
-package travel.wink.support;
+package travel.wink.sdk.support;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

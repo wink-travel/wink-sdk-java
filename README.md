@@ -31,7 +31,7 @@ The Affiliate API exposes endpoints for affiliates who want browse available pla
 
 #### Usage
 
-Using Spring, @Import(AffiliateSDKConfiguration.class) or run a component scan over `travel.wink.affiliate`. That will give you access to the following Spring Beans:
+Using Spring, @Import(AffiliateSDKConfiguration.class) or run a component scan over `travel.wink.sdk.affiliate`. That will give you access to the following Spring Beans:
 
 - AnalyticsApi: Create analytics that is meaningful to you. We provide the filters, sorting mechanisms and data points you need to track everything you want on our platform. 
 - ApplicationApi: Manage your API keys via the ApplicationApi. 
@@ -65,7 +65,7 @@ The Booking Engine API exposes search functionality for finding available hotels
 
 #### Usage
 
-Using Spring, @Import(BookingEngineSDKConfiguration.class) or run a component scan over `travel.wink.booking.engine`. That will give you access to the following Spring Beans:
+Using Spring, @Import(BookingEngineSDKConfiguration.class) or run a component scan over `travel.wink.sdk.booking.engine`. That will give you access to the following Spring Beans:
 
 - InventoryApi: Everything related to querying property availability.
 - BookingApi: Everything related to viewing, creating and cancelling bookings.
@@ -89,7 +89,7 @@ The Channel Manager API enables external channel manager partners to map, exchan
 
 #### Usage
 
-Using Spring, @Import(ChannelManagerSDKConfiguration.class) or run a component scan over `travel.wink.channel.manager`. That will give you access to the following Spring Beans:
+Using Spring, @Import(ChannelManagerSDKConfiguration.class) or run a component scan over `travel.wink.sdk.channel.manager`. That will give you access to the following Spring Beans:
 
 - ChannelManagerApi: Everything related to pushing rates and availability as well as querying properties managed by your channel manager account with us.
 
@@ -110,7 +110,7 @@ The Extranet API exposes endpoints for managing all aspects of a property on our
 
 #### Usage
 
-Using Spring, @Import(ExtranetSDKConfiguration.class) or run a component scan over `travel.wink.extranet`. That will give you access to the following Spring Beans:
+Using Spring, @Import(ExtranetSDKConfiguration.class) or run a component scan over `travel.wink.sdk.extranet`. That will give you access to the following Spring Beans:
 
 - AccessApi: Manage which users get to manage your properties with the Access API.
 - ActivityApi: Manage activities guests can book / view along with their room with the Activity API.
@@ -171,7 +171,7 @@ The Payment API exposes endpoints for affiliates and hotels to track bookings, a
 
 #### Usage
 
-Using Spring, @Import(PaymentSDKConfiguration.class) or run a component scan over `travel.wink.payment`. That will give you access to the following Spring Beans:
+Using Spring, @Import(PaymentSDKConfiguration.class) or run a component scan over `travel.wink.sdk.payment`. That will give you access to the following Spring Beans:
 
 - AccountApi: Manage your account(s) on TripPay with the Account API.
 - AccountMappingsApi: Manage your account mappings on TripPay with the Account Mapping API.
