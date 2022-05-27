@@ -7,14 +7,20 @@
 echo "Releasing wink-sdk-java..."
 
 echo "Cleaning artifacts..."
-mvn clean
+mvn clean compile
+STATUS=$?
+if [ $STATUS -ne 0 ]; then
+  echo "Something went wrong on line: ${BASH_LINENO[*]}"
+  exit 1
+fi
 
 echo "Sync-ing remote master with local"
 git checkout master
 git pull
 
 git checkout develop
-mvn versions:set -DnewVersion="$(npx git-changelog-command-line --print-next-version)" -DnextSnapshot=true -DgenerateBackupPoms=false
+newVersion=`npx git-changelog-command-line --print-next-version --major-version-pattern "^[Bb]reaking" --minor-version-pattern "^[Ff]eature"`
+mvn versions:set -DnewVersion="$newVersion" -DnextSnapshot=true -DgenerateBackupPoms=false
 git commit -a -m ":bookmark: build: Committing updated pom.xml files with semantic versioning using Conventional Commits."
 
 echo "Starting release process..."
@@ -50,7 +56,7 @@ git checkout master
 git push origin master:refs/heads/master
 
 echo "Pushing release artifacts to Sonatype..."
-mvn clean deploy -Psonatype-oss-release
+mvn deploy -Psonatype-oss-release
 
 git checkout develop
 
@@ -58,6 +64,6 @@ echo "Pushing develop to origin"
 git push origin develop:refs/heads/develop
 
 echo "Pushing snapshot artifacts to Sonatype..."
-mvn clean deploy -Psonatype-oss-release
+mvn deploy -Psonatype-oss-release
 
 echo "Release SUCCESS"

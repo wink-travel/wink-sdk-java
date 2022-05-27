@@ -1,23 +1,23 @@
-package travel.wink.affiliate;
+package travel.wink.sdk.affiliate;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;
-import travel.wink.affiliate.api.AnalyticsApi;
-import travel.wink.affiliate.api.ApplicationApi;
-import travel.wink.affiliate.api.BookingsApi;
-import travel.wink.affiliate.api.CampaignApi;
-import travel.wink.affiliate.api.CompanyApi;
-import travel.wink.affiliate.api.CustomizationApi;
-import travel.wink.affiliate.api.DiscoverApi;
-import travel.wink.affiliate.api.InventoryCardsApi;
-import travel.wink.affiliate.api.InventoryGridsApi;
-import travel.wink.affiliate.api.InvoiceApi;
-import travel.wink.affiliate.api.LeaderboardApi;
-import travel.wink.affiliate.api.MapsApi;
-import travel.wink.affiliate.api.ShareableLinksApi;
-import travel.wink.affiliate.invoker.ApiClient;
+import travel.wink.sdk.affiliate.api.AnalyticsApi;
+import travel.wink.sdk.affiliate.api.ApplicationApi;
+import travel.wink.sdk.affiliate.api.BookingsApi;
+import travel.wink.sdk.affiliate.api.CampaignApi;
+import travel.wink.sdk.affiliate.api.CompanyApi;
+import travel.wink.sdk.affiliate.api.CustomizationApi;
+import travel.wink.sdk.affiliate.api.DiscoverApi;
+import travel.wink.sdk.affiliate.api.InventoryCardsApi;
+import travel.wink.sdk.affiliate.api.InventoryGridsApi;
+import travel.wink.sdk.affiliate.api.InvoiceApi;
+import travel.wink.sdk.affiliate.api.LeaderboardApi;
+import travel.wink.sdk.affiliate.api.MapsApi;
+import travel.wink.sdk.affiliate.api.ShareableLinksApi;
+import travel.wink.sdk.affiliate.invoker.ApiClient;
 
 @RequiredArgsConstructor
 @Configuration
