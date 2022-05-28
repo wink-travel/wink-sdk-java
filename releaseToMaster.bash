@@ -22,16 +22,10 @@ git checkout develop
 newVersion=`npx git-changelog-command-line --print-next-version --major-version-pattern BREAKING --minor-version-pattern feat`
 echo "New semantic version using Conventional Commits: $newVersion"
 
-echo "Temporarily setting the release version sp the changelog plugin will pick up the changes"
-mvn versions:set -DnewVersion="$newVersion" -DgenerateBackupPoms=false
-
-echo "Updating CHANGELOG.md..."
-mvn git-changelog-maven-plugin:git-changelog
-
 echo "Setting the next snapshot version"
 mvn versions:set -DnewVersion="$newVersion-SNAPSHOT" -DgenerateBackupPoms=false
 
-git commit -a -m ":bookmark: build: Committing updated pom.xml files and CHANGELOG.md."
+git commit -a -m ":bookmark: build: Committing updated pom.xml files"
 
 echo "Starting release process..."
 
@@ -46,12 +40,20 @@ echo "Release complete. Finishing up..."
 
 echo "Pushing master to origin"
 git checkout master
+
+echo "Updating CHANGELOG.md..."
+mvn git-changelog-maven-plugin:git-changelog
+git commit -a -m ":memo: doc: Updated CHANGELOG.md..."
+
 git push origin master:refs/heads/master
 
 echo "Pushing release artifacts to Sonatype..."
 mvn deploy -Psonatype-oss-release
 
 git checkout develop
+
+echo "Merging CHANGELOG.md from master..."
+git merge master --no-edit -m ":memo: doc: merged CHANGELOG.md from master into develop branch" --strategy-option theirs
 
 echo "Pushing develop to origin"
 git push origin develop:refs/heads/develop
