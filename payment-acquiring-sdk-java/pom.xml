@@ -7,10 +7,10 @@
         <artifactId>wink-sdk-java</artifactId>
         <version>20.1.0</version>
     </parent>
-    <artifactId>booking-engine-sdk-java</artifactId>
+    <artifactId>payment-acquiring-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <name>Booking Engine SDK Java</name>
-    <description>Java SDK for the wink Booking Engine API</description>
+    <name>Payment Acquiring SDK Java</name>
+    <description>Java SDK for the wink Payment Acquiring API</description>
 
     <build>
         <plugins>
@@ -34,9 +34,9 @@
                             <configOptions>
                                 <!-- <additionalModelTypeAnnotations>@lombok.Builder</additionalModelTypeAnnotations> -->
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <apiPackage>travel.wink.sdk.booking.engine.api</apiPackage>
-                                <modelPackage>travel.wink.sdk.booking.engine.model</modelPackage>
-                                <invokerPackage>travel.wink.sdk.booking.engine.invoker</invokerPackage>
+                                <apiPackage>travel.wink.sdk.payment.acquiring.api</apiPackage>
+                                <modelPackage>travel.wink.sdk.payment.acquiring.model</modelPackage>
+                                <invokerPackage>travel.wink.sdk.payment.acquiring.invoker</invokerPackage>
                                 <library>webclient</library>
                                 <dateLibrary>java8</dateLibrary>
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>

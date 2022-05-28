@@ -177,8 +177,31 @@ Using Spring, @Import(PaymentSDKConfiguration.class) or run a component scan ove
 - AccountMappingsApi: Manage your account mappings on TripPay with the Account Mapping API.
 - AgentApi: Create a booking contract as an Agent with the Agent API.
 - ContractApi: Retrieve booking contracts and cancel them if possible.
-- MappingApi: `Deprecated`
 - PingApi: Easy way to check if you are connected and authenticated with the wink platform.
+
+### Payment Acquiring
+
+[API documentation](https://api.trippay.io/docs?api=wc)
+
+The Payment Acquiring API exposes endpoints for affiliates to acquire a payment via our payment methods in their own applications. These are the same features we leverage in our payment Web Component.
+
+```
+<dependency>
+  <groupId>travel.wink</groupId>
+  <artifactId>payment-acquiring-sdk-java</artifactId>
+  <version><!-- see Releases --></version>
+  <packaging>jar</packaging>
+</dependency>
+```
+
+#### Usage
+
+Using Spring, @Import(PaymentAcquiringSDKConfiguration.class) or run a component scan over `travel.wink.sdk.payment.acquiring`. That will give you access to the following Spring Beans:
+
+- AffiliateApi: Retrieve affiliate facilitator data with the Affiliate API.
+- ContractApi: Validate, price and execute a booking contract with the Contract API.
+- NmiApi: Create an SCA / PSD2 compliant sale request through NMI's payment gateway (U.S. only) with the NMI API.
+- StripeApi: Create an SCA / PSD2 compliant sale request with Stripe's payment gateway with the Stripe API.
 
 ## Configuration
 You will need a client ID and a client secret to communicate with any of the Wink platform endpoints. You can create your account and get your credentials here:
@@ -204,3 +227,11 @@ Create 2 environment variables in your preferred way:
 
 1. WINK_TRAVEL_CLIENT_ID=YOUR_CLIENT_ID
 2. WINK_TRAVEL_CLIENT_SECRET=YOUR_CLIENT_SECRET
+
+## You might also be interested in...
+If you are developing for WordPress, we've [probably] got you covered. Check out our WordPress plugin:
+
+- GitHub repo: [https://github.com/iko-travel/iko-travel-affiliate-wordpress-plugin](https://github.com/iko-travel/iko-travel-affiliate-wordpress-plugin)
+- WordPress: [https://wordpress.org/plugins/iko-travel-affiliate/](https://wordpress.org/plugins/iko-travel-affiliate/) 
+
+Note: We have not yet re-branded our WP plugin to wink. 
