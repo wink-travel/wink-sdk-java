@@ -8,6 +8,7 @@ import travel.wink.sdk.payment.api.AccountApi;
 import travel.wink.sdk.payment.api.AccountMappingsApi;
 import travel.wink.sdk.payment.api.AgentApi;
 import travel.wink.sdk.payment.api.ContractApi;
+import travel.wink.sdk.payment.api.MappingApi;
 import travel.wink.sdk.payment.api.PingApi;
 import travel.wink.sdk.payment.invoker.ApiClient;
 
@@ -28,6 +29,10 @@ public class PaymentSDKConfiguration {
 	@Bean
 	public AccountMappingsApi accountMappingsApi() {
 		return new AccountMappingsApi(apiClient());
+	}
+	@Bean
+	public MappingApi mappingApi() {
+		return new MappingApi(apiClient());
 	}
 	@Bean
 	public AgentApi agentApi() {

@@ -76,7 +76,7 @@ Using Spring, @Import(BookingEngineSDKConfiguration.class) or run a component sc
 
 [API documentation](https://api.wink.travel/docs?api=channel-manager)
 
-The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the wink platform for one of their properties.  
+The Channel Manager API enables external channel manager partners to map, exchange rate / availability information with us as well as be informed of bookings that occur on the Wink platform for one of their properties.  
 
 ```
 <dependency>
@@ -151,7 +151,7 @@ Using Spring, @Import(ExtranetSDKConfiguration.class) or run a component scan ov
 - SchedulerApi: Manage the calendar schedule for all facilities and ancillary inventory with the Scheduler API.
 - SocialNetworkApi: Manage property social networks using the Social Network API.
 - SpaApi: Manage spa guests can book / view along with their room with the Activity API.
-- TestApi: Easy way to check if you are connected and authenticated with the wink platform.
+- TestApi: Easy way to check if you are connected and authenticated with the Wink platform.
 
 
 ### Payment
@@ -173,11 +173,12 @@ The Payment API exposes endpoints for affiliates and hotels to track bookings, a
 
 Using Spring, @Import(PaymentSDKConfiguration.class) or run a component scan over `travel.wink.sdk.payment`. That will give you access to the following Spring Beans:
 
-- AccountApi: Manage your account(s) on TripPay with the Account API.
-- AccountMappingsApi: Manage your account mappings on TripPay with the Account Mapping API.
+- AccountApi: Manage your account(s) on Wink with the Account API.
+- AccountMappingsApi: Manage your account mappings on Wink with the Account Mapping API.
 - AgentApi: Create a booking contract as an Agent with the Agent API.
 - ContractApi: Retrieve booking contracts and cancel them if possible.
-- PingApi: Easy way to check if you are connected and authenticated with the wink platform.
+- MappingApi: More mapping features to control mappings between your system and Wink.
+- PingApi: Easy way to check if you are connected and authenticated with the Wink platform.
 
 ### Payment Acquiring
 
@@ -234,4 +235,4 @@ If you are developing for WordPress, we've [probably] got you covered. Check out
 - GitHub repo: [https://github.com/iko-travel/iko-travel-affiliate-wordpress-plugin](https://github.com/iko-travel/iko-travel-affiliate-wordpress-plugin)
 - WordPress: [https://wordpress.org/plugins/iko-travel-affiliate/](https://wordpress.org/plugins/iko-travel-affiliate/) 
 
-Note: We have not yet re-branded our WP plugin to wink. 
+Note: We have not yet re-branded our WP plugin to Wink. 
