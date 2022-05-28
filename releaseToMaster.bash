@@ -35,7 +35,7 @@ git commit -a -m ":bookmark: build: Committing updated pom.xml files and CHANGEL
 
 echo "Starting release process..."
 
-mvn -B gitflow:release-start gitflow:release-finish -DskipTestProject=true
+mvn -B gitflow:release-start gitflow:release-finish -DskipTestProject=true -DskipUpdateVersion=true -versionProperty="$newVersion"
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
   echo "Something went wrong on line: ${BASH_LINENO[*]}"
