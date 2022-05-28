@@ -22,10 +22,14 @@ git checkout develop
 newVersion=`npx git-changelog-command-line --print-next-version --major-version-pattern BREAKING --minor-version-pattern feat`
 echo "New semantic version using Conventional Commits: $newVersion"
 
-mvn versions:set -DnewVersion="$newVersion-SNAPSHOT" -DgenerateBackupPoms=false
+echo "Temporarily setting the release version sp the changelog plugin will pick up the changes"
+mvn versions:set -DnewVersion="$newVersion" -DgenerateBackupPoms=false
 
 echo "Updating CHANGELOG.md..."
 mvn git-changelog-maven-plugin:git-changelog
+
+echo "Setting the next snapshot version"
+mvn versions:set -DnewVersion="$newVersion-SNAPSHOT" -DgenerateBackupPoms=false
 
 git commit -a -m ":bookmark: build: Committing updated pom.xml files and CHANGELOG.md."
 
