@@ -23,28 +23,15 @@ newVersion=`npx git-changelog-command-line --print-next-version --major-version-
 echo "New semantic version using Conventional Commits: $newVersion"
 
 mvn versions:set -DnewVersion="$newVersion-SNAPSHOT" -DgenerateBackupPoms=false
-git commit -a -m ":bookmark: build: Committing updated pom.xml files."
-
-echo "Starting release process..."
-
-mvn -B gitflow:release-start -DskipTestProject=true
-STATUS=$?
-if [ $STATUS -ne 0 ]; then
-  echo "Something went wrong on line: ${BASH_LINENO[*]}"
-  exit 1
-fi
 
 echo "Updating CHANGELOG.md..."
 mvn git-changelog-maven-plugin:git-changelog
-STATUS=$?
-if [ $STATUS -ne 0 ]; then
-  echo "Something went wrong on line: ${BASH_LINENO[*]}"
-  exit 1
-fi
 
-git commit -a -m ":memo: chore: Committing updated CHANGELOG.md"
+git commit -a -m ":bookmark: build: Committing updated pom.xml files and CHANGELOG.md."
 
-mvn -B gitflow:release-finish -DskipTestProject=true
+echo "Starting release process..."
+
+mvn -B gitflow:release-start gitflow:release-finish -DskipTestProject=true
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
   echo "Something went wrong on line: ${BASH_LINENO[*]}"
