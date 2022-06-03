@@ -53,7 +53,7 @@ mvn deploy -Psonatype-oss-release
 git checkout develop
 
 echo "Merging CHANGELOG.md from master..."
-git merge master --no-edit -m ":memo: doc: merged CHANGELOG.md from master into develop branch" --strategy-option theirs
+git merge master --no-edit -m ":twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch" --strategy-option theirs
 
 echo "Pushing develop to origin"
 git push origin develop:refs/heads/develop

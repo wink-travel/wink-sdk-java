@@ -8,7 +8,7 @@ Welcome to the Java SDK that enables you to communicate with all that the Wink p
 This SDK contains 5 unique libraries you can leverage to communicate with the Wink platform.
 
 ### Java Requirements
-Maven artifacts were compiled with Java 17. Java 1.8 is the minimum requirement.
+Maven artifacts were compiled with Java 17. Java 1.8 is the lowest supported version.
 
 Spring is not required but we highly recommend you use. Our examples will be based on how to do it the "Spring way".
 
@@ -31,7 +31,7 @@ The Affiliate API exposes endpoints for affiliates who want browse available pla
 
 #### Usage
 
-Using Spring, @Import(AffiliateSDKConfiguration.class) or run a component scan over `travel.wink.sdk.affiliate`. That will give you access to the following Spring Beans:
+Using Spring, @Import(AffiliateSDKConfiguration.class) or run a component scan over `travel.wink.sdk.affiliate` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - AnalyticsApi: Create analytics that is meaningful to you. We provide the filters, sorting mechanisms and data points you need to track everything you want on our platform. 
 - ApplicationApi: Manage your API keys via the ApplicationApi. 
@@ -65,7 +65,7 @@ The Booking Engine API exposes search functionality for finding available hotels
 
 #### Usage
 
-Using Spring, @Import(BookingEngineSDKConfiguration.class) or run a component scan over `travel.wink.sdk.booking.engine`. That will give you access to the following Spring Beans:
+Using Spring, @Import(BookingEngineSDKConfiguration.class) or run a component scan over `travel.wink.sdk.booking.engine` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - InventoryApi: Everything related to querying property availability.
 - BookingApi: Everything related to viewing, creating and cancelling bookings.
@@ -89,7 +89,7 @@ The Channel Manager API enables external channel manager partners to map, exchan
 
 #### Usage
 
-Using Spring, @Import(ChannelManagerSDKConfiguration.class) or run a component scan over `travel.wink.sdk.channel.manager`. That will give you access to the following Spring Beans:
+Using Spring, @Import(ChannelManagerSDKConfiguration.class) or run a component scan over `travel.wink.sdk.channel.manager` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - ChannelManagerApi: Everything related to pushing rates and availability as well as querying properties managed by your channel manager account with us.
 
@@ -110,7 +110,7 @@ The Extranet API exposes endpoints for managing all aspects of a property on our
 
 #### Usage
 
-Using Spring, @Import(ExtranetSDKConfiguration.class) or run a component scan over `travel.wink.sdk.extranet`. That will give you access to the following Spring Beans:
+Using Spring, @Import(ExtranetSDKConfiguration.class) or run a component scan over `travel.wink.sdk.extranet` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - AccessApi: Manage which users get to manage your properties with the Access API.
 - ActivityApi: Manage activities guests can book / view along with their room with the Activity API.
@@ -171,7 +171,7 @@ The Payment API exposes endpoints for affiliates and hotels to track bookings, a
 
 #### Usage
 
-Using Spring, @Import(PaymentSDKConfiguration.class) or run a component scan over `travel.wink.sdk.payment`. That will give you access to the following Spring Beans:
+Using Spring, @Import(PaymentSDKConfiguration.class) or run a component scan over `travel.wink.sdk.payment` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - AccountApi: Manage your account(s) on Wink with the Account API.
 - AccountMappingsApi: Manage your account mappings on Wink with the Account Mapping API.
@@ -197,7 +197,7 @@ The Payment Acquiring API exposes endpoints for affiliates to acquire a payment 
 
 #### Usage
 
-Using Spring, @Import(PaymentAcquiringSDKConfiguration.class) or run a component scan over `travel.wink.sdk.payment.acquiring`. That will give you access to the following Spring Beans:
+Using Spring, @Import(PaymentAcquiringSDKConfiguration.class) or run a component scan over `travel.wink.sdk.payment.acquiring` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - AffiliateApi: Retrieve affiliate facilitator data with the Affiliate API.
 - ContractApi: Validate, price and execute a booking contract with the Contract API.
