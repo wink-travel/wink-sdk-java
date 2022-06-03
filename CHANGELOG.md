@@ -2,6 +2,71 @@
 
 Changelog of wink-sdk-java.
 
+## 20.2.0 (2022-06-03)
+
+
+
+### Features
+
+-  **WSJ-7**  Added exchange rate endpoint to booking engine ([66ecb](https://github.com/wink-travel/wink-sdk-java/commit/66ecb6168089e6a) Bjorn Harvold)  
+
+
+
+
+### Other changes
+
+**Merge branch 'release/20.2.0'**
+
+
+[c7273](https://github.com/wink-travel/wink-sdk-java/commit/c7273d6059f04d6) Bjorn Harvold *2022-06-03 05:24:28*
+
+**Update versions for release**
+
+
+[d9cbf](https://github.com/wink-travel/wink-sdk-java/commit/d9cbfc1cdd1f268) Bjorn Harvold *2022-06-03 05:24:17*
+
+**:bookmark: build: Committing updated pom.xml files**
+
+
+[8128f](https://github.com/wink-travel/wink-sdk-java/commit/8128fe7d5f7206a) Bjorn Harvold *2022-06-03 05:24:11*
+
+**:memo: docs: changed merge gitmoji**
+
+
+[5b605](https://github.com/wink-travel/wink-sdk-java/commit/5b605f2cac86727) Bjorn Harvold *2022-06-01 07:26:02*
+
+**:memo: docs: changed wording on Java 1.8**
+
+
+[75b22](https://github.com/wink-travel/wink-sdk-java/commit/75b2241a7e98f91) Bjorn Harvold *2022-05-31 07:56:00*
+
+**:memo: docs: added scan path of automatic Spring Oauth2 support**
+
+
+[9f2e4](https://github.com/wink-travel/wink-sdk-java/commit/9f2e453c5f7d871) Bjorn Harvold *2022-05-31 07:55:10*
+
+**:memo: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[d1093](https://github.com/wink-travel/wink-sdk-java/commit/d10930278121bb0) Bjorn Harvold *2022-05-31 06:50:17*
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[00558](https://github.com/wink-travel/wink-sdk-java/commit/00558b2a58c95fd) Bjorn Harvold *2022-05-31 06:45:37*
+
+**Update for next development version**
+
+
+[bc0c9](https://github.com/wink-travel/wink-sdk-java/commit/bc0c92b11e8bb36) Bjorn Harvold *2022-05-31 06:45:26*
+
+**Merge tag '20.1.4' into develop**
+
+* Tag release 
+
+[d6cda](https://github.com/wink-travel/wink-sdk-java/commit/d6cdad52fd5e794) Bjorn Harvold *2022-05-31 06:45:25*
+
+
 ## 20.1.4 (2022-05-31)
 
 
