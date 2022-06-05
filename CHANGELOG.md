@@ -2,6 +2,53 @@
 
 Changelog of wink-sdk-java.
 
+## 20.2.1 (2022-06-05)
+
+
+
+
+
+
+
+### Other changes
+
+**Merge branch 'release/20.2.1'**
+
+
+[7a4bf](https://github.com/wink-travel/wink-sdk-java/commit/7a4bfe57763094c) Bjorn Harvold *2022-06-05 06:53:25*
+
+**Update versions for release**
+
+
+[bdc48](https://github.com/wink-travel/wink-sdk-java/commit/bdc48ffeca02931) Bjorn Harvold *2022-06-05 06:53:14*
+
+**:recycle: chore(WSJ-8): added swift field to bank account**
+
+
+[6c261](https://github.com/wink-travel/wink-sdk-java/commit/6c2619bbe4b168b) Bjorn Harvold *2022-06-05 06:52:06*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[0416a](https://github.com/wink-travel/wink-sdk-java/commit/0416a3f43a398be) Bjorn Harvold *2022-06-03 05:28:16*
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[6390d](https://github.com/wink-travel/wink-sdk-java/commit/6390d38d13a9de2) Bjorn Harvold *2022-06-03 05:24:41*
+
+**Update for next development version**
+
+
+[c5232](https://github.com/wink-travel/wink-sdk-java/commit/c52328b7dd467bd) Bjorn Harvold *2022-06-03 05:24:29*
+
+**Merge tag '20.2.0' into develop**
+
+* Tag release 
+
+[1f23f](https://github.com/wink-travel/wink-sdk-java/commit/1f23f36c04ec262) Bjorn Harvold *2022-06-03 05:24:28*
+
+
 ## 20.2.0 (2022-06-03)
 
 
