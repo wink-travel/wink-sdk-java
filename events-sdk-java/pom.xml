@@ -7,10 +7,10 @@
         <artifactId>wink-sdk-java</artifactId>
         <version>20.2.7</version>
     </parent>
-    <artifactId>booking-engine-sdk-java</artifactId>
+    <artifactId>events-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <name>Booking Engine SDK Java</name>
-    <description>Java SDK for the wink Booking Engine API</description>
+    <name>Events SDK Java</name>
+    <description>Java SDK for the wink Events API</description>
 
     <build>
         <plugins>
@@ -34,9 +34,9 @@
                             <configOptions>
                                 <!-- <additionalModelTypeAnnotations>@lombok.Builder</additionalModelTypeAnnotations> -->
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <apiPackage>travel.wink.sdk.booking.engine.api</apiPackage>
-                                <modelPackage>travel.wink.sdk.booking.engine.model</modelPackage>
-                                <invokerPackage>travel.wink.sdk.booking.engine.invoker</invokerPackage>
+                                <apiPackage>travel.wink.sdk.events.api</apiPackage>
+                                <modelPackage>travel.wink.sdk.events.model</modelPackage>
+                                <invokerPackage>travel.wink.sdk.events.invoker</invokerPackage>
                                 <library>webclient</library>
                                 <dateLibrary>java8</dateLibrary>
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>
