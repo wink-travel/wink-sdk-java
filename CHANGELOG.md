@@ -2,6 +2,56 @@
 
 Changelog of wink-sdk-java.
 
+## 21.0.0 (2022-07-03)
+
+### Breaking changes
+
+-  **WSJ-12**  Enriched the object model ([03b72](https://github.com/wink-travel/wink-sdk-java/commit/03b72b165dd8e1f) Bjorn Harvold)  
+
+
+
+
+
+
+### Other changes
+
+**Merge branch 'release/21.0.0'**
+
+
+[aa0c6](https://github.com/wink-travel/wink-sdk-java/commit/aa0c68cabb5da37) Bjorn Harvold *2022-07-03 13:09:24*
+
+**Update versions for release**
+
+
+[587d0](https://github.com/wink-travel/wink-sdk-java/commit/587d0f7529ee33c) Bjorn Harvold *2022-07-03 13:09:14*
+
+**:bookmark: build: Committing updated pom.xml files**
+
+
+[bd303](https://github.com/wink-travel/wink-sdk-java/commit/bd3036923511274) Bjorn Harvold *2022-07-03 13:09:07*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[de9c1](https://github.com/wink-travel/wink-sdk-java/commit/de9c180c3da547b) Bjorn Harvold *2022-07-01 10:04:43*
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[6cf0d](https://github.com/wink-travel/wink-sdk-java/commit/6cf0d3d6d17e1ee) Bjorn Harvold *2022-07-01 09:59:53*
+
+**Update for next development version**
+
+
+[aea7a](https://github.com/wink-travel/wink-sdk-java/commit/aea7a4bb95a2ab0) Bjorn Harvold *2022-07-01 09:59:41*
+
+**Merge tag '20.2.7' into develop**
+
+* Tag release 
+
+[7e344](https://github.com/wink-travel/wink-sdk-java/commit/7e3448d64d4d9dc) Bjorn Harvold *2022-07-01 09:59:39*
+
+
 ## 20.2.7 (2022-07-01)
 
 
