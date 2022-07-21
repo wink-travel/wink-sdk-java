@@ -9,7 +9,7 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>wink-sdk-java</artifactId>
-    <version>21.0.0</version>
+    <version>21.0.1</version>
     <packaging>pom</packaging>
     <name>wink.travel Java SDK</name>
     <description>Java libraries for all wink APIs.</description>
@@ -40,6 +40,7 @@
         <conventional-commits-maven-plugin.version>1.92</conventional-commits-maven-plugin.version>
         <git.commit.plugin.version>5.0.0</git.commit.plugin.version>
         <gitflow.maven.plugin>1.18.0</gitflow.maven.plugin>
+        <github.release.maven.plugin.version>1.0.4</github.release.maven.plugin.version>
         <hibernate.validator.version>6.2.3.Final</hibernate.validator.version>
         <jackson.version>2.13.3</jackson.version>
         <jackson.databind.nullable.version>0.2.0</jackson.databind.nullable.version>
@@ -254,6 +255,26 @@
                                     <directory>${project.build.directory}/generated-docs</directory>
                                 </resource>
                             </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.ragedunicorn.tools.maven</groupId>
+                <artifactId>github-release-maven-plugin</artifactId>
+                <version>${github.release.maven.plugin.version}</version>
+                <inherited>false</inherited>
+                <executions>
+                    <execution>
+                        <id>default-cli</id>
+                        <configuration>
+                            <owner>wink-travel</owner>
+                            <repository>monorepo-java</repository>
+                            <server>github-oauth</server>
+                            <targetCommitish>master</targetCommitish>
+                            <tagName>${project.version}</tagName>
+                            <body>See CHANGELOG.md for release notes</body>
                         </configuration>
                     </execution>
                 </executions>
