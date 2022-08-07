@@ -48,7 +48,7 @@ git commit -a -m ":memo: doc: Updated CHANGELOG.md..."
 git push origin master:refs/heads/master
 
 echo "Creating GitHub release..."
-mvn github-release:github-release
+gh release create v$newVersion --notes "See CHANGELOG.md for release notes" --target master
 
 echo "Pushing release artifacts to Sonatype..."
 mvn deploy -Psonatype-oss-release
