@@ -2,6 +2,84 @@
 
 Changelog of wink-sdk-java.
 
+## 21.2.0 (2022-08-16)
+
+
+
+
+
+
+
+### Other changes
+
+**Merge branch 'release/21.2.0'**
+
+
+[46240](https://github.com/wink-travel/wink-sdk-java/commit/46240aad2ebdbb2) Bjorn Harvold *2022-08-16 06:07:32*
+
+**Update versions for release**
+
+
+[95a0e](https://github.com/wink-travel/wink-sdk-java/commit/95a0e584f78e413) Bjorn Harvold *2022-08-16 06:07:21*
+
+**:bookmark: build: Committing updated pom.xml files**
+
+
+[a45ef](https://github.com/wink-travel/wink-sdk-java/commit/a45ef904eaffaef) Bjorn Harvold *2022-08-16 06:07:15*
+
+**:sparkles: feat(WSJ-14): Support Wink v21.8.1**
+
+
+[01282](https://github.com/wink-travel/wink-sdk-java/commit/01282b82258751c) Bjorn Harvold *2022-08-16 06:06:12*
+
+**:sparkles: feat(WSJ-14): Support Wink v21.8.1**
+
+
+[b566c](https://github.com/wink-travel/wink-sdk-java/commit/b566c27586c76f0) Bjorn Harvold *2022-08-16 05:55:00*
+
+**Delete .idea directory**
+
+
+[04476](https://github.com/wink-travel/wink-sdk-java/commit/04476e31b29b53b) Bjorn Harvold *2022-08-07 02:52:10*
+
+**:construction_worker: build: updated Github release method**
+
+
+[ea1fb](https://github.com/wink-travel/wink-sdk-java/commit/ea1fbad5ecc201a) Bjorn Harvold *2022-08-07 02:48:43*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[c16ee](https://github.com/wink-travel/wink-sdk-java/commit/c16ee05ff321b85) Bjorn Harvold *2022-08-07 02:40:26*
+
+**Update for next development version**
+
+
+[4f4b8](https://github.com/wink-travel/wink-sdk-java/commit/4f4b82a5971f2d5) Bjorn Harvold *2022-08-07 02:36:01*
+
+**Merge tag '21.1.0' into develop**
+
+* Tag release 
+
+[fbc61](https://github.com/wink-travel/wink-sdk-java/commit/fbc61cf9f768fa8) Bjorn Harvold *2022-08-07 02:35:59*
+
+
+## v21.1.0 (2022-08-07)
+
+
+
+
+
+
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[c8bf6](https://github.com/wink-travel/wink-sdk-java/commit/c8bf67e99d2ed45) Bjorn Harvold *2022-08-07 02:36:13*
+
+
 ## 21.1.0 (2022-08-07)
 
 
