@@ -6,26 +6,22 @@
 
 echo "Releasing wink-sdk-java..."
 
-echo "Cleaning artifacts..."
-mvn clean compile
-STATUS=$?
-if [ $STATUS -ne 0 ]; then
-  echo "Something went wrong on line: ${BASH_LINENO[*]}"
-  exit 1
-fi
-
 echo "Sync-ing remote master with local"
 git checkout master
 git pull
 
 git checkout develop
-newVersion=`npx git-changelog-command-line --print-next-version --major-version-pattern BREAKING --minor-version-pattern feat`
-echo "New semantic version using Conventional Commits: $newVersion"
 
-echo "Setting the next snapshot version"
-mvn versions:set -DnewVersion="$newVersion-SNAPSHOT" -DgenerateBackupPoms=false
+# grab latest spec files from production servers
+./downloadLatestOpenApiSpecs.bash
 
-git commit -a -m ":bookmark: build: Committing updated pom.xml files"
+# grab the latest platform version from one of the new open api spec files
+newVersion=`jq -r '.info.version' ./affiliate-sdk-java/src/main/resources/openapi-spec.json`
+
+echo "Setting the next snapshot version to $newVersion"
+mvn versions:set -DnewVersion=$newVersion -DgenerateBackupPoms=false
+
+git commit -a -m ":bookmark: build: Updated Open API files"
 
 echo "Starting release process..."
 
@@ -50,8 +46,8 @@ git push origin master:refs/heads/master
 echo "Creating GitHub release..."
 gh release create v$newVersion --notes "See CHANGELOG.md for release notes" --target master
 
-echo "Pushing release artifacts to Sonatype..."
-mvn deploy -Psonatype-oss-release
+#echo "Pushing release artifacts to Sonatype..."
+#mvn deploy -Psonatype-oss-release
 
 git checkout develop
 
@@ -61,7 +57,7 @@ git merge master --no-edit -m ":twisted_rightwards_arrows: doc: merged CHANGELOG
 echo "Pushing develop to origin"
 git push origin develop:refs/heads/develop
 
-echo "Pushing snapshot artifacts to Sonatype..."
-mvn deploy -Psonatype-oss-release
+#echo "Pushing snapshot artifacts to Sonatype..."
+#mvn deploy -Psonatype-oss-release
 
 echo "Release SUCCESS"
