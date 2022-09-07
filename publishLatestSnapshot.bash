@@ -16,6 +16,12 @@ if [ $STATUS -ne 0 ]; then
   exit 1
 fi
 
+# grab the latest platform version from one of the new open api spec files
+newVersion=`jq '.info.version' ./affiliate-sdk-java/src/main/resources/openapi-spec.json`
+
+echo "Setting the next snapshot version to $newVersion"
+mvn versions:set -DnewVersion=$newVersion -DgenerateBackupPoms=false
+
 git commit -a -m ":bookmark: build: Updated Open API files"
 
 echo "Pushing develop to origin"
