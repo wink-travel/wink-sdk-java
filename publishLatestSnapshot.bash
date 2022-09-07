@@ -8,8 +8,6 @@ echo "Publishing wink-sdk-java SNAPSHOT..."
 
 ./downloadLatestOpenApiSpecs.bash staging
 
-git commit -a -m ":bookmark: build: Updated Open API files"
-
 echo "Building artifacts..."
 mvn clean compile
 STATUS=$?
@@ -17,6 +15,8 @@ if [ $STATUS -ne 0 ]; then
   echo "Something went wrong on line: ${BASH_LINENO[*]}"
   exit 1
 fi
+
+git commit -a -m ":bookmark: build: Updated Open API files"
 
 echo "Pushing develop to origin"
 git push origin develop:refs/heads/develop

@@ -74,7 +74,7 @@ retrieveOpenApiSpecFunction $paymentUrl $paymentSpecLocation
 
 echo "Grabbing Payment Acquiring spec..."
 paymentAcquiringUrl="$tripPayUrl/v3/api-docs/wc"
-paymentAcquiringSpecLocation="./payment-sdk-java/src/main/resources/openapi-spec.json"
+paymentAcquiringSpecLocation="./payment-acquiring-sdk-java/src/main/resources/openapi-spec.json"
 
 retrieveOpenApiSpecFunction $paymentAcquiringUrl $paymentAcquiringSpecLocation
 
