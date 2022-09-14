@@ -19,7 +19,7 @@ git checkout develop
 newVersion=`jq -r '.info.version' ./affiliate-sdk-java/src/main/resources/openapi-spec.json`
 
 echo "Setting the next snapshot version to $newVersion"
-mvn versions:set -DnewVersion=$newVersion -DgenerateBackupPoms=false
+mvn versions:set -DnewVersion="$newVersion-SNAPSHOT" -DgenerateBackupPoms=false
 
 git commit -a -m ":bookmark: build: Updated Open API files"
 
@@ -57,6 +57,7 @@ git merge master --no-edit -m ":twisted_rightwards_arrows: doc: merged CHANGELOG
 echo "Pushing develop to origin"
 git push origin develop:refs/heads/develop
 
+# Deprecated - Moved this to build server
 #echo "Pushing snapshot artifacts to Sonatype..."
 #mvn deploy -Psonatype-oss-release
 
