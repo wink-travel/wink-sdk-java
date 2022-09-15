@@ -85,13 +85,13 @@ lookupSpecLocation="./lookup/src/main/resources/openapi-spec.json"
 retrieveOpenApiSpecFunction $lookupUrl $lookupSpecLocation
 
 echo "Grabbing Payment spec..."
-paymentUrl="$tripPayUrl/v3/api-docs/contract"
+paymentUrl="$tripPayUrl/v3/api-docs/payment"
 paymentSpecLocation="./payment/src/main/resources/openapi-spec.json"
 
 retrieveOpenApiSpecFunction $paymentUrl $paymentSpecLocation
 
 echo "Grabbing Payment Acquiring spec..."
-paymentAcquiringUrl="$tripPayUrl/v3/api-docs/wc"
+paymentAcquiringUrl="$tripPayUrl/v3/api-docs/payment-acquiring"
 paymentAcquiringSpecLocation="./payment-acquiring/src/main/resources/openapi-spec.json"
 
 retrieveOpenApiSpecFunction $paymentAcquiringUrl $paymentAcquiringSpecLocation
