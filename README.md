@@ -65,7 +65,7 @@ The Analytics API gives you access to time series data on a variety of data sour
 
 #### Usage
 
-Using Spring, @Import(AffiliateSDKConfiguration.class) or run a component scan over `travel.wink.sdk.affiliate` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
+Using Spring, @Import(AffiliateSDKConfiguration.class) or run a component scan over `travel.wink.sdk.analytics` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - AnalyticsApi: Create analytics that is meaningful to you. We provide the filters, sorting mechanisms and data points you need to track everything you want on our platform.
 - LeaderboardApi: Track where you stand compared to other affiliates. The metric is bookings.
