@@ -9,7 +9,7 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>wink-sdk-java</artifactId>
-    <version>21.16.2</version>
+    <version>21.16.3</version>
     <packaging>pom</packaging>
     <name>wink.travel Java SDK</name>
     <description>Java libraries for all wink APIs.</description>
@@ -73,13 +73,16 @@
     </properties>
 
     <modules>
-        <module>affiliate-sdk-java</module>
-        <module>booking-engine-sdk-java</module>
-        <module>channel-manager-sdk-java</module>
-        <module>events-sdk-java</module>
-        <module>extranet-sdk-java</module>
-		<module>payment-sdk-java</module>
-		<module>payment-acquiring-sdk-java</module>
+        <module>affiliate</module>
+		<module>analytics</module>
+        <module>booking</module>
+        <module>channel-manager</module>
+        <module>extranet</module>
+        <module>inventory</module>
+        <module>lookup</module>
+		<module>payment</module>
+		<module>payment-acquiring</module>
+        <module>reference</module>
         <module>oauth2-web-client</module>
     </modules>
 

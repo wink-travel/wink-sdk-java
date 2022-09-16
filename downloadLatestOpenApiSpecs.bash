@@ -42,41 +42,65 @@ if [[ $env == *"staging"* ]]; then
   tripPayUrl="https://staging-api.trippay.io"
 fi
 
+echo "Grabbing Analytics spec..."
+analyticsUrl="$winkUrl/v3/api-docs/analytics"
+analyticsSpecLocation="./analytics/src/main/resources/openapi-spec.json"
+
+retrieveOpenApiSpecFunction $analyticsUrl $analyticsSpecLocation
+
 echo "Grabbing Affiliate spec..."
 affiliateUrl="$winkUrl/v3/api-docs/affiliate"
-affiliateSpecLocation="./affiliate-sdk-java/src/main/resources/openapi-spec.json"
+affiliateSpecLocation="./affiliate/src/main/resources/openapi-spec.json"
 
 retrieveOpenApiSpecFunction $affiliateUrl $affiliateSpecLocation
 
-echo "Grabbing Booking Engine spec..."
-bookingEngineUrl="$winkUrl/v3/api-docs/booking-engine"
-bookingEngineSpecLocation="./booking-engine-sdk-java/src/main/resources/openapi-spec.json"
+echo "Grabbing Booking spec..."
+bookingUrl="$winkUrl/v3/api-docs/booking"
+bookingSpecLocation="./booking/src/main/resources/openapi-spec.json"
 
-retrieveOpenApiSpecFunction $bookingEngineUrl $bookingEngineSpecLocation
-
-echo "Grabbing Extranet spec..."
-extranetUrl="$winkUrl/v3/api-docs/extranet"
-extranetSpecLocation="./extranet-sdk-java/src/main/resources/openapi-spec.json"
-
-retrieveOpenApiSpecFunction $extranetUrl $extranetSpecLocation
+retrieveOpenApiSpecFunction $bookingUrl $bookingSpecLocation
 
 echo "Grabbing Channel Manager spec..."
 channelManagerUrl="$integrationsUrl/v3/api-docs/channel-manager"
-channelManagerSpecLocation="./channel-manager-sdk-java/src/main/resources/openapi-spec.json"
+channelManagerSpecLocation="./channel-manager/src/main/resources/openapi-spec.json"
 
 retrieveOpenApiSpecFunction $channelManagerUrl $channelManagerSpecLocation
 
+echo "Grabbing Extranet spec..."
+extranetUrl="$winkUrl/v3/api-docs/extranet"
+extranetSpecLocation="./extranet/src/main/resources/openapi-spec.json"
+
+retrieveOpenApiSpecFunction $extranetUrl $extranetSpecLocation
+
+echo "Grabbing Inventory spec..."
+inventoryUrl="$winkUrl/v3/api-docs/inventory"
+inventorySpecLocation="./inventory/src/main/resources/openapi-spec.json"
+
+retrieveOpenApiSpecFunction $inventoryUrl $inventorySpecLocation
+
+echo "Grabbing Lookup spec..."
+lookupUrl="$winkUrl/v3/api-docs/lookup"
+lookupSpecLocation="./lookup/src/main/resources/openapi-spec.json"
+
+retrieveOpenApiSpecFunction $lookupUrl $lookupSpecLocation
+
 echo "Grabbing Payment spec..."
-paymentUrl="$tripPayUrl/v3/api-docs/contract"
-paymentSpecLocation="./payment-sdk-java/src/main/resources/openapi-spec.json"
+paymentUrl="$tripPayUrl/v3/api-docs/payment"
+paymentSpecLocation="./payment/src/main/resources/openapi-spec.json"
 
 retrieveOpenApiSpecFunction $paymentUrl $paymentSpecLocation
 
 echo "Grabbing Payment Acquiring spec..."
-paymentAcquiringUrl="$tripPayUrl/v3/api-docs/wc"
-paymentAcquiringSpecLocation="./payment-acquiring-sdk-java/src/main/resources/openapi-spec.json"
+paymentAcquiringUrl="$tripPayUrl/v3/api-docs/payment-acquiring"
+paymentAcquiringSpecLocation="./payment-acquiring/src/main/resources/openapi-spec.json"
 
 retrieveOpenApiSpecFunction $paymentAcquiringUrl $paymentAcquiringSpecLocation
+
+echo "Grabbing Reference spec..."
+referenceUrl="$winkUrl/v3/api-docs/reference"
+referenceSpecLocation="./reference/src/main/resources/openapi-spec.json"
+
+retrieveOpenApiSpecFunction $referenceUrl $referenceSpecLocation
 
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
