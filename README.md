@@ -5,7 +5,7 @@
 Welcome to the Java SDK that enables you to communicate with all that the Wink platform has to offer.
 
 ## Getting started
-This SDK contains 5 unique libraries you can leverage to communicate with the Wink platform.
+This SDK contains libraries you can leverage to communicate with the Wink platform.
 
 ### Java Requirements
 Maven artifacts were compiled with Java 17. Java 1.8 is the lowest supported version.
