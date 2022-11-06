@@ -19,7 +19,16 @@ git checkout develop
 newVersion=`jq -r '.info.version' ./affiliate/src/main/resources/openapi-spec.json`
 
 echo "Setting the next snapshot version to $newVersion"
-mvn versions:set -DnewVersion="$newVersion-SNAPSHOT" -DgenerateBackupPoms=false
+
+# test to see if the version already contains SNAPSHOT
+if [[ "$newVersion" == *"SNAPSHOT"* ]] 
+then
+	setVersion=newVersion
+else 
+	setVersion=$newVersion-SNAPSHOT
+fi
+
+mvn versions:set -DnewVersion="$setVersion" -DgenerateBackupPoms=false
 
 git commit -a -m ":bookmark: build: Updated Open API files"
 
