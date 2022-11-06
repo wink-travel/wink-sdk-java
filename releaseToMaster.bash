@@ -21,14 +21,14 @@ newVersion=`jq -r '.info.version' ./affiliate/src/main/resources/openapi-spec.js
 echo "Setting the next snapshot version to $newVersion"
 
 # test to see if the version already contains SNAPSHOT
-if [[ "$newVersion" == *"SNAPSHOT"* ]] 
-then
-	setVersion=newVersion
-else 
-	setVersion=$newVersion-SNAPSHOT
-fi
+#if [[ "$newVersion" == *"SNAPSHOT"* ]] 
+#then
+#	setVersion=newVersion
+#else 
+#	setVersion=$newVersion-SNAPSHOT
+#fi
 
-mvn versions:set -DnewVersion="$setVersion" -DgenerateBackupPoms=false
+mvn versions:set -DnewVersion="$newVersion" -DgenerateBackupPoms=false
 
 git commit -a -m ":bookmark: build: Updated Open API files"
 
