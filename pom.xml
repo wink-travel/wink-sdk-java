@@ -80,10 +80,7 @@
         <module>extranet</module>
         <module>inventory</module>
         <module>lookup</module>
-		<module>payment</module>
-		<module>payment-acquiring</module>
         <module>reference</module>
-        <module>oauth2-web-client</module>
     </modules>
 
     <build>
