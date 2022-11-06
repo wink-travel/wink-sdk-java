@@ -34,12 +34,15 @@ env=$1
 echo "Download latest deployed Open API specs..."
 winkUrl="https://api.wink.travel"
 integrationsUrl="https://integrations.wink.travel"
-tripPayUrl="https://api.trippay.io"
+
+if [[ $env == *"dev"* ]]; then
+  winkUrl="https://dev-api.wink.travel:8443"
+  integrationsUrl="https://dev-integrations.wink.travel:8445"
+fi
 
 if [[ $env == *"staging"* ]]; then
   winkUrl="https://staging-api.wink.travel"
   integrationsUrl="https://staging-integrations.wink.travel"
-  tripPayUrl="https://staging-api.trippay.io"
 fi
 
 echo "Grabbing Analytics spec..."
@@ -83,18 +86,6 @@ lookupUrl="$winkUrl/v3/api-docs/lookup"
 lookupSpecLocation="./lookup/src/main/resources/openapi-spec.json"
 
 retrieveOpenApiSpecFunction $lookupUrl $lookupSpecLocation
-
-echo "Grabbing Payment spec..."
-paymentUrl="$tripPayUrl/v3/api-docs/payment"
-paymentSpecLocation="./payment/src/main/resources/openapi-spec.json"
-
-retrieveOpenApiSpecFunction $paymentUrl $paymentSpecLocation
-
-echo "Grabbing Payment Acquiring spec..."
-paymentAcquiringUrl="$tripPayUrl/v3/api-docs/payment-acquiring"
-paymentAcquiringSpecLocation="./payment-acquiring/src/main/resources/openapi-spec.json"
-
-retrieveOpenApiSpecFunction $paymentAcquiringUrl $paymentAcquiringSpecLocation
 
 echo "Grabbing Reference spec..."
 referenceUrl="$winkUrl/v3/api-docs/reference"

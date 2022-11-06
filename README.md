@@ -5,7 +5,7 @@
 Welcome to the Java SDK that enables you to communicate with all that the Wink platform has to offer.
 
 ## Getting started
-This SDK contains 5 unique libraries you can leverage to communicate with the Wink platform.
+This SDK contains libraries you can leverage to communicate with the Wink platform.
 
 ### Java Requirements
 Maven artifacts were compiled with Java 17. Java 1.8 is the lowest supported version.
@@ -216,57 +216,6 @@ Using Spring, @Import(LookupSDKConfiguration.class) or run a component scan over
 
 - LookupApi: Everything related to querying for best priced room types using various filter mechanisms
 
-
-### Payment
-
-[API documentation](https://docs.wink.travel/payment)
-
-The Payment API exposes endpoints for affiliates and hotels to track bookings, analytics and funds availability. They can also choose to withdraw available funds to their bank account.
-
-```
-<dependency>
-  <groupId>travel.wink</groupId>
-  <artifactId>payment-sdk-java</artifactId>
-  <version><!-- see Releases --></version>
-  <packaging>jar</packaging>
-</dependency>
-```
-
-#### Usage
-
-Using Spring, @Import(PaymentSDKConfiguration.class) or run a component scan over `travel.wink.sdk.payment` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
-- AccountApi: Manage your account(s) on Wink with the Account API.
-- AccountMappingsApi: Manage your account mappings on Wink with the Account Mapping API.
-- AgentApi: Create a booking contract as an Agent with the Agent API.
-- ContractApi: Retrieve booking contracts and cancel them if possible.
-- MappingApi: More mapping features to control mappings between your system and Wink.
-- PingApi: Easy way to check if you are connected and authenticated with the Wink platform.
-
-### Payment Acquiring
-
-[API documentation](https://docs.wink.travel/payment-acquiring)
-
-The Payment Acquiring API exposes endpoints for affiliates to acquire a payment via our payment methods in their own applications. These are the same features we leverage in our payment Web Component.
-
-```
-<dependency>
-  <groupId>travel.wink</groupId>
-  <artifactId>payment-acquiring-sdk-java</artifactId>
-  <version><!-- see Releases --></version>
-  <packaging>jar</packaging>
-</dependency>
-```
-
-#### Usage
-
-Using Spring, @Import(PaymentAcquiringSDKConfiguration.class) or run a component scan over `travel.wink.sdk.payment.acquiring` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
-- AffiliateApi: Retrieve affiliate facilitator data with the Affiliate API.
-- ContractApi: Validate, price and execute a booking contract with the Contract API.
-- NmiApi: Create an SCA / PSD2 compliant sale request through NMI's payment gateway (U.S. only) with the NMI API.
-- StripeApi: Create an SCA / PSD2 compliant sale request with Stripe's payment gateway with the Stripe API.
-
 ### Reference
 
 [API documentation](https://docs.wink.travel/reference)
@@ -317,6 +266,8 @@ Create 2 environment variables in your preferred way:
 ## You might also be interested in...
 If you are developing for WordPress, we've [probably] got you covered. Check out our WordPress plugin:
 
+- Wink IAM Java SDK repo: [https://github.com/wink-travel/iam-sdk-java](https://github.com/wink-travel/iam-sdk-java)
+- TripPay Java SDK repo: [https://github.com/wink-travel/trip-pay-sdk-java](https://github.com/wink-travel/trip-pay-sdk-java)
 - Wink WordPress plugin repo: [https://github.com/wink-travel/affiliate-wordpress-plugin](https://github.com/wink-travel/affiliate-wordpress-plugin)
 - Wink WordPress Divi plugin repo: [https://github.com/wink-travel/affiliate-wordpress-divi-plugin](https://github.com/wink-travel/affiliate-wordpress-divi-plugin)
 - WordPress: [https://wordpress.org/plugins/iko-travel-affiliate/](https://wordpress.org/plugins/iko-travel-affiliate/) 
