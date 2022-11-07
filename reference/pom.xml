@@ -64,7 +64,7 @@
         <dependency>
             <groupId>travel.wink</groupId>
             <artifactId>oauth2-web-client</artifactId>
-            <version>${project.parent.version}</version>
+            <version>${iam.wink.version}</version>
         </dependency>
     </dependencies>
 </project>
