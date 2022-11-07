@@ -36,6 +36,7 @@
 
     <properties>
         <java.version>17</java.version>
+        <iam.wink.version>22.0.1</iam.wink.version>
         <buildnumber.maven.plugin.version>1.4</buildnumber.maven.plugin.version>
         <conventional-commits-maven-plugin.version>1.92</conventional-commits-maven-plugin.version>
         <git.commit.plugin.version>5.0.0</git.commit.plugin.version>
