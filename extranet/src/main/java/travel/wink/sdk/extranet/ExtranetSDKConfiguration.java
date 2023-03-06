@@ -26,7 +26,6 @@ import travel.wink.sdk.extranet.api.MediaApi;
 import travel.wink.sdk.extranet.api.MeetingRoomApi;
 import travel.wink.sdk.extranet.api.NotificationApi;
 import travel.wink.sdk.extranet.api.OnboardingApi;
-import travel.wink.sdk.extranet.api.PackageApi;
 import travel.wink.sdk.extranet.api.PlaceApi;
 import travel.wink.sdk.extranet.api.PolicyApi;
 import travel.wink.sdk.extranet.api.PromotionApi;
@@ -162,11 +161,6 @@ public class ExtranetSDKConfiguration {
 	@Bean
 	public OnboardingApi onboardingApi() {
 		return new OnboardingApi(apiClient());
-	}
-
-	@Bean
-	public PackageApi packageApi() {
-		return new PackageApi(apiClient());
 	}
 
 	@Bean
