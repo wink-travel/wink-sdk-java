@@ -9,7 +9,7 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>wink-sdk-java</artifactId>
-    <version>24.0.0</version>
+    <version>24.3.2</version>
     <packaging>pom</packaging>
     <name>wink.travel Java SDK</name>
     <description>Java libraries for all wink APIs.</description>
@@ -34,46 +34,6 @@
         <tag>HEAD</tag>
     </scm>
 
-    <!--
-    <properties>
-        <java.version>17</java.version>
-        <buildnumber.maven.plugin.version>1.4</buildnumber.maven.plugin.version>
-        <conventional-commits-maven-plugin.version>1.92</conventional-commits-maven-plugin.version>
-        <git.commit.plugin.version>5.0.0</git.commit.plugin.version>
-        <gitflow.maven.plugin>1.18.0</gitflow.maven.plugin>
-        <github.release.maven.plugin.version>1.0.4</github.release.maven.plugin.version>
-        <hibernate.validator.version>6.2.3.Final</hibernate.validator.version>
-        <jackson.version>2.13.5</jackson.version>
-        <jackson.databind.nullable.version>0.2.6</jackson.databind.nullable.version>
-        <jackson.threetenbp.version>2.12.2</jackson.threetenbp.version>
-        <javax.annotation.api.version>1.3.2</javax.annotation.api.version>
-        <jsr305.version>3.0.2</jsr305.version>
-        <lombok.version>1.18.24</lombok.version>
-        <maven.assembly.plugin.vebuirsion>3.3.0</maven.assembly.plugin.vebuirsion>
-        <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
-        <maven.compiler.plugin.version>3.10.1</maven.compiler.plugin.version>
-        <maven.dependency.plugin.version>3.2.0</maven.dependency.plugin.version>
-        <maven.deploy.plugin.version>3.0.0-M2</maven.deploy.plugin.version>
-        <maven.gpg.version>1.6</maven.gpg.version>
-        <maven.javadoc.plugin.version>3.3.1</maven.javadoc.plugin.version>
-        <maven.release.plugin.version>3.0.0-M7</maven.release.plugin.version>
-        <maven.resources.plugin.version>3.2.0</maven.resources.plugin.version>
-        <maven.scm.plugin.version>1.12.0</maven.scm.plugin.version>
-        <maven.source.plugin.version>3.0.1</maven.source.plugin.version>
-        <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
-        <nexus.staging.maven.plugin>1.6.13</nexus.staging.maven.plugin>
-        <openapi.generator.version>6.0.1</openapi.generator.version>
-        <sonatypeOssDistMgmtSnapshotsUrl>https://s01.oss.sonatype.org/</sonatypeOssDistMgmtSnapshotsUrl>
-        <spring.version>5.3.25</spring.version>
-        <spring.security.version>5.7.7</spring.security.version>
-        <swagger.annotations.version>1.6.2</swagger.annotations.version>
-        <swagger3.annotations.version>2.1.10</swagger3.annotations.version>
-        <threeten.version>1.7.0</threeten.version>
-        <threetenbp.version>1.5.1</threetenbp.version>
-        <versions.maven.plugin>2.8.1</versions.maven.plugin>
-    </properties>
-    -->
-
     <properties>
         <java.version>17</java.version>
         <iam.wink.version>22.0.1</iam.wink.version>
@@ -83,7 +43,7 @@
         <gitflow.maven.plugin>1.18.0</gitflow.maven.plugin>
         <github.release.maven.plugin.version>1.0.4</github.release.maven.plugin.version>
         <hibernate.validator.version>6.2.3.Final</hibernate.validator.version>
-        <jackson.version>2.13.5</jackson.version>
+        <jackson.version>2.14.2</jackson.version>
         <jackson.databind.nullable.version>0.2.6</jackson.databind.nullable.version>
         <jackson.threetenbp.version>2.12.2</jackson.threetenbp.version>
         <javax.annotation.api.version>1.3.2</javax.annotation.api.version>
@@ -213,6 +173,12 @@
                 <groupId>com.amashchenko.maven.plugin</groupId>
                 <artifactId>gitflow-maven-plugin</artifactId>
                 <version>${gitflow.maven.plugin}</version>
+                <configuration>
+                    <allowSnapshots>true</allowSnapshots>
+                    <fetchRemote>false</fetchRemote>
+                    <skipFeatureVersion>true</skipFeatureVersion>
+                    <skipUpdateVersion>false</skipUpdateVersion>
+                </configuration>
             </plugin>
 
             <plugin>

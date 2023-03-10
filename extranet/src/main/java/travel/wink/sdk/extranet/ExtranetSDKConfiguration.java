@@ -15,7 +15,6 @@ import travel.wink.sdk.extranet.api.BookingApi;
 import travel.wink.sdk.extranet.api.CalDavApi;
 import travel.wink.sdk.extranet.api.CancellationPolicyApi;
 import travel.wink.sdk.extranet.api.ChannelManagerApi;
-import travel.wink.sdk.extranet.api.ContactsApi;
 import travel.wink.sdk.extranet.api.DailyRateApi;
 import travel.wink.sdk.extranet.api.GeoLocationApi;
 import travel.wink.sdk.extranet.api.GuestRoomApi;
@@ -106,11 +105,6 @@ public class ExtranetSDKConfiguration {
 	@Bean
 	public ChannelManagerApi channelManagerApi() {
 		return new ChannelManagerApi(apiClient());
-	}
-
-	@Bean
-	public ContactsApi contactsApi() {
-		return new ContactsApi(apiClient());
 	}
 
 	@Bean
