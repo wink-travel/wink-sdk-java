@@ -142,7 +142,6 @@ Using Spring, @Import(ExtranetSDKConfiguration.class) or run a component scan ov
 - BookingApi: Manage bookings and cancellations with the Booking API.
 - CalDavApi: Integrate you favorite calendar application with your bookings so you can see who's coming with the CalDAV API.
 - CancellationPolicyApi: Manage property cancellation policies with the Cancellation Policy API.
-- ContactsApi: Manage property contacts with the Contacts API.
 - DailyRateApi: Manage Master Rate rates with the Daily Rate API.
 - GeoNameApi: Query standard geo-name data from the platform to see which locations we support using the Geo Name API. 
 - GeoLocationApi: Manage property geo-location with the Geo Location API.
