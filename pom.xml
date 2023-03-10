@@ -173,6 +173,12 @@
                 <groupId>com.amashchenko.maven.plugin</groupId>
                 <artifactId>gitflow-maven-plugin</artifactId>
                 <version>${gitflow.maven.plugin}</version>
+                <configuration>
+                    <allowSnapshots>true</allowSnapshots>
+                    <fetchRemote>false</fetchRemote>
+                    <skipFeatureVersion>true</skipFeatureVersion>
+                    <skipUpdateVersion>false</skipUpdateVersion>
+                </configuration>
             </plugin>
 
             <plugin>
