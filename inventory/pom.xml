@@ -5,7 +5,7 @@
     <parent>
         <groupId>travel.wink</groupId>
         <artifactId>wink-sdk-java</artifactId>
-        <version>25.0.3</version>
+        <version>25.1.0</version>
     </parent>
     <artifactId>inventory</artifactId>
     <packaging>jar</packaging>
@@ -25,6 +25,13 @@
                     <importMappings>
                         <importMapping>java.time.OffsetDateTime=java.time.LocalDateTime</importMapping>
                     </importMappings>
+<!--                    <configOptions>-->
+<!--                        <performBeanValidation>true</performBeanValidation>-->
+<!--                        <hideGenerationTimestamp>true</hideGenerationTimestamp>-->
+<!--                        <useBeanValidation>true</useBeanValidation>-->
+<!--                        <sourceFolder>src/main/java</sourceFolder>-->
+<!--                        <configPackage>com.example.demo.config</configPackage>-->
+<!--                    </configOptions>-->
                 </configuration>
                 <executions>
                     <execution>
@@ -52,6 +59,7 @@
                                 <serializationLibrary>jackson</serializationLibrary>
                                 <useBeanValidation>true</useBeanValidation>
                                 <useGzipFeature>true</useGzipFeature>
+                                <useJakartaEe>true</useJakartaEe>
                             </configOptions>
                         </configuration>
                     </execution>
