@@ -5,7 +5,7 @@
     <parent>
         <groupId>travel.wink</groupId>
         <artifactId>wink-sdk-java</artifactId>
-        <version>25.4.2</version>
+        <version>25.6.4</version>
     </parent>
     <artifactId>lookup</artifactId>
     <packaging>jar</packaging>
@@ -21,9 +21,11 @@
                 <configuration>
                     <typeMappings>
                         <typeMapping>OffsetDateTime=java.time.LocalDateTime</typeMapping>
+                        <typeMapping>Double=java.math.BigDecimal</typeMapping>
                     </typeMappings>
                     <importMappings>
                         <importMapping>java.time.OffsetDateTime=java.time.LocalDateTime</importMapping>
+                        <importMapping>java.lang.Double=java.math.BigDecimal</importMapping>
                     </importMappings>
 <!--                    <configOptions>-->
 <!--                        <performBeanValidation>true</performBeanValidation>-->
