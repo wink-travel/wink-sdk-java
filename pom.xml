@@ -145,6 +145,7 @@
                     <serverId>ossrh</serverId>
                     <nexusUrl>${sonatypeOssDistMgmtSnapshotsUrl}</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
                 </configuration>
                 <executions>
                     <execution>
