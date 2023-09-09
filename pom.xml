@@ -9,7 +9,7 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>wink-sdk-java</artifactId>
-    <version>29.8.8</version>
+    <version>29.10.0</version>
     <packaging>pom</packaging>
     <name>wink.travel Java SDK</name>
     <description>Java libraries for all wink APIs.</description>
@@ -35,7 +35,7 @@
     </scm>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>20</java.version>
         <iam.wink.version>24.0.0</iam.wink.version>
         <buildnumber.maven.plugin.version>3.0.0</buildnumber.maven.plugin.version>
         <conventional-commits-maven-plugin.version>1.92</conventional-commits-maven-plugin.version>
