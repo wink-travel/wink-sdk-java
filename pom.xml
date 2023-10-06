@@ -9,7 +9,7 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>wink-sdk-java</artifactId>
-    <version>29.10.0</version>
+    <version>29.11.0</version>
     <packaging>pom</packaging>
     <name>wink.travel Java SDK</name>
     <description>Java libraries for all wink APIs.</description>
@@ -62,7 +62,7 @@
         <maven.source.plugin.version>3.0.1</maven.source.plugin.version>
         <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
         <nexus.staging.maven.plugin>1.6.13</nexus.staging.maven.plugin>
-        <openapi.generator.version>6.4.0</openapi.generator.version>
+        <openapi.generator.version>7.0.1</openapi.generator.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://s01.oss.sonatype.org/</sonatypeOssDistMgmtSnapshotsUrl>
         <spring.version>6.0.11</spring.version>
         <spring.security.version>6.1.2</spring.security.version>
