@@ -2,13 +2,53 @@
 
 Changelog of wink-sdk-java.
 
+## 29.29.1 (2023-12-21)
+
+### Bug Fixes
+
+-  :arrow_up: added iam.wink.version back in ([b0687](https://github.com/wink-travel/wink-sdk-java/commit/b0687130d618c09) Bjorn Harvold)  
+-  :arrow_up: added JSR305 version back in ([4591c](https://github.com/wink-travel/wink-sdk-java/commit/4591c8cace441cb) Bjorn Harvold)  
+
+### Other changes
+
+**Merge branch 'release/29.29.1'**
+
+
+[0cc8f](https://github.com/wink-travel/wink-sdk-java/commit/0cc8f0407d516e9) Bjorn Harvold *2023-12-21 07:36:38*
+
+**:bookmark: build: Updated Open API files**
+
+
+[eb38d](https://github.com/wink-travel/wink-sdk-java/commit/eb38d42b44e95ac) Bjorn Harvold *2023-12-21 07:36:36*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[338b9](https://github.com/wink-travel/wink-sdk-java/commit/338b99f9aa8ed35) Bjorn Harvold *2023-12-19 03:00:46*
+
+**Update for next development version**
+
+
+[22c99](https://github.com/wink-travel/wink-sdk-java/commit/22c99b15f16caff) Bjorn Harvold *2023-12-19 03:00:26*
+
+**Merge tag '29.28.3' into develop**
+
+* Tag release 
+
+[e7703](https://github.com/wink-travel/wink-sdk-java/commit/e7703d0b2cb411b) Bjorn Harvold *2023-12-19 03:00:24*
+
+
+## v29.28.3 (2023-12-19)
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[4243f](https://github.com/wink-travel/wink-sdk-java/commit/4243fca00235086) Bjorn Harvold *2023-12-19 03:00:40*
+
+
 ## 29.28.3 (2023-12-19)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -41,12 +81,6 @@ Changelog of wink-sdk-java.
 
 ## v29.24.2 (2023-11-28)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -56,12 +90,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.24.2 (2023-11-28)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -94,12 +122,6 @@ Changelog of wink-sdk-java.
 
 ## v29.23.0 (2023-11-03)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -109,12 +131,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.23.0 (2023-11-03)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -147,12 +163,6 @@ Changelog of wink-sdk-java.
 
 ## v29.20.0 (2023-10-29)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -162,12 +172,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.20.0 (2023-10-29)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -200,12 +204,6 @@ Changelog of wink-sdk-java.
 
 ## v29.19.0 (2023-10-29)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -215,12 +213,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.19.0 (2023-10-29)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -253,12 +245,6 @@ Changelog of wink-sdk-java.
 
 ## v29.12.0 (2023-10-16)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -268,12 +254,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.12.0 (2023-10-16)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -306,12 +286,6 @@ Changelog of wink-sdk-java.
 
 ## v29.11.0 (2023-10-06)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -321,12 +295,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.11.0 (2023-10-06)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -359,12 +327,6 @@ Changelog of wink-sdk-java.
 
 ## v29.10.0 (2023-09-09)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -374,12 +336,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.10.0 (2023-09-09)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -412,12 +368,6 @@ Changelog of wink-sdk-java.
 
 ## v29.8.8 (2023-08-27)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -427,12 +377,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.8.8 (2023-08-27)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -465,12 +409,6 @@ Changelog of wink-sdk-java.
 
 ## v29.8.3 (2023-08-24)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -480,12 +418,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.8.3 (2023-08-24)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -518,12 +450,6 @@ Changelog of wink-sdk-java.
 
 ## v29.8.0 (2023-08-22)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -533,12 +459,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.8.0 (2023-08-22)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -571,12 +491,6 @@ Changelog of wink-sdk-java.
 
 ## v29.7.0 (2023-08-17)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -586,12 +500,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.7.0 (2023-08-17)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -624,12 +532,6 @@ Changelog of wink-sdk-java.
 
 ## v29.3.0 (2023-08-06)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -639,12 +541,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.3.0 (2023-08-06)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -677,12 +573,6 @@ Changelog of wink-sdk-java.
 
 ## v29.0.0 (2023-07-29)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -692,12 +582,6 @@ Changelog of wink-sdk-java.
 
 
 ## 29.0.0 (2023-07-29)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -730,12 +614,6 @@ Changelog of wink-sdk-java.
 
 ## v28.2.0 (2023-07-27)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -745,12 +623,6 @@ Changelog of wink-sdk-java.
 
 
 ## 28.2.0 (2023-07-27)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -788,12 +660,6 @@ Changelog of wink-sdk-java.
 
 ## v28.1.0 (2023-07-26)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -803,12 +669,6 @@ Changelog of wink-sdk-java.
 
 
 ## 28.1.0 (2023-07-26)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -846,12 +706,6 @@ Changelog of wink-sdk-java.
 
 ## v28.0.0 (2023-07-26)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -861,12 +715,6 @@ Changelog of wink-sdk-java.
 
 
 ## 28.0.0 (2023-07-26)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -899,12 +747,6 @@ Changelog of wink-sdk-java.
 
 ## v27.2.1 (2023-07-25)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -914,12 +756,6 @@ Changelog of wink-sdk-java.
 
 
 ## 27.2.1 (2023-07-25)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -952,12 +788,6 @@ Changelog of wink-sdk-java.
 
 ## v27.1.1 (2023-07-24)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -967,12 +797,6 @@ Changelog of wink-sdk-java.
 
 
 ## 27.1.1 (2023-07-24)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1005,12 +829,6 @@ Changelog of wink-sdk-java.
 
 ## v26.1.1 (2023-06-13)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1020,12 +838,6 @@ Changelog of wink-sdk-java.
 
 
 ## 26.1.1 (2023-06-13)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1058,12 +870,6 @@ Changelog of wink-sdk-java.
 
 ## v26.0.3 (2023-06-10)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1073,12 +879,6 @@ Changelog of wink-sdk-java.
 
 
 ## 26.0.3 (2023-06-10)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1111,12 +911,6 @@ Changelog of wink-sdk-java.
 
 ## v25.6.8 (2023-06-04)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1126,12 +920,6 @@ Changelog of wink-sdk-java.
 
 
 ## 25.6.8 (2023-06-04)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1164,12 +952,6 @@ Changelog of wink-sdk-java.
 
 ## v25.6.4 (2023-06-04)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1179,12 +961,6 @@ Changelog of wink-sdk-java.
 
 
 ## 25.6.4 (2023-06-04)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1222,12 +998,6 @@ Changelog of wink-sdk-java.
 
 ## v25.4.2 (2023-05-12)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1237,12 +1007,6 @@ Changelog of wink-sdk-java.
 
 
 ## 25.4.2 (2023-05-12)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1280,12 +1044,6 @@ Changelog of wink-sdk-java.
 
 ## v25.3.0 (2023-05-05)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1295,12 +1053,6 @@ Changelog of wink-sdk-java.
 
 
 ## 25.3.0 (2023-05-05)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1333,12 +1085,6 @@ Changelog of wink-sdk-java.
 
 ## v25.2.7 (2023-04-26)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1348,12 +1094,6 @@ Changelog of wink-sdk-java.
 
 
 ## 25.2.7 (2023-04-26)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1386,12 +1126,6 @@ Changelog of wink-sdk-java.
 
 ## v25.2.3 (2023-04-12)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1401,12 +1135,6 @@ Changelog of wink-sdk-java.
 
 
 ## 25.2.3 (2023-04-12)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1439,12 +1167,6 @@ Changelog of wink-sdk-java.
 
 ## v25.1.0 (2023-04-06)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1454,12 +1176,6 @@ Changelog of wink-sdk-java.
 
 
 ## 25.1.0 (2023-04-06)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1503,12 +1219,6 @@ Changelog of wink-sdk-java.
 
 ## v25.0.3 (2023-03-24)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1518,12 +1228,6 @@ Changelog of wink-sdk-java.
 
 
 ## 25.0.3 (2023-03-24)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1556,12 +1260,6 @@ Changelog of wink-sdk-java.
 
 ## v24.7.0 (2023-03-17)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1571,12 +1269,6 @@ Changelog of wink-sdk-java.
 
 
 ## 24.7.0 (2023-03-17)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1609,12 +1301,6 @@ Changelog of wink-sdk-java.
 
 ## v24.3.2 (2023-03-10)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1624,12 +1310,6 @@ Changelog of wink-sdk-java.
 
 
 ## 24.3.2 (2023-03-10)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1661,12 +1341,6 @@ Changelog of wink-sdk-java.
 
 ## v24.0.0 (2023-03-06)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1676,12 +1350,6 @@ Changelog of wink-sdk-java.
 
 
 ## 24.0.0 (2023-03-06)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1750,12 +1418,6 @@ Changelog of wink-sdk-java.
 
 ## v23.1.1 (2022-11-08)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1765,12 +1427,6 @@ Changelog of wink-sdk-java.
 
 
 ## 23.1.1 (2022-11-08)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1813,12 +1469,6 @@ Changelog of wink-sdk-java.
 
 ## v23.1.0 (2022-11-07)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1828,12 +1478,6 @@ Changelog of wink-sdk-java.
 
 
 ## 23.1.0 (2022-11-07)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1871,12 +1515,6 @@ Changelog of wink-sdk-java.
 
 ## v23.0.0 (2022-11-06)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1890,11 +1528,6 @@ Changelog of wink-sdk-java.
 ### Breaking changes
 
 -  **WSJ-17**  Updated maven open api plugin ([4e915](https://github.com/wink-travel/wink-sdk-java/commit/4e915d554f441ce) Bjorn Harvold)  
-
-
-
-
-
 
 ### Other changes
 
@@ -1952,12 +1585,6 @@ Changelog of wink-sdk-java.
 
 ## v22.0.1 (2022-10-18)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -1967,12 +1594,6 @@ Changelog of wink-sdk-java.
 
 
 ## 22.0.1 (2022-10-18)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2015,12 +1636,6 @@ Changelog of wink-sdk-java.
 
 ## v21.16.3 (2022-09-16)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -2030,12 +1645,6 @@ Changelog of wink-sdk-java.
 
 
 ## 21.16.3 (2022-09-16)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2113,12 +1722,6 @@ Changelog of wink-sdk-java.
 
 ## v21.16.2 (2022-09-14)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -2128,12 +1731,6 @@ Changelog of wink-sdk-java.
 
 
 ## 21.16.2 (2022-09-14)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2181,12 +1778,6 @@ Changelog of wink-sdk-java.
 
 ## v21.15.1 (2022-09-07)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -2196,12 +1787,6 @@ Changelog of wink-sdk-java.
 
 
 ## 21.15.1 (2022-09-07)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2280,12 +1865,6 @@ Changelog of wink-sdk-java.
 
 ## v21.3.0 (2022-09-06)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -2295,12 +1874,6 @@ Changelog of wink-sdk-java.
 
 
 ## 21.3.0 (2022-09-06)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2343,12 +1916,6 @@ Changelog of wink-sdk-java.
 
 ## v21.2.1 (2022-08-16)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -2358,12 +1925,6 @@ Changelog of wink-sdk-java.
 
 
 ## 21.2.1 (2022-08-16)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2396,12 +1957,6 @@ Changelog of wink-sdk-java.
 
 ## v21.2.0 (2022-08-16)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -2411,12 +1966,6 @@ Changelog of wink-sdk-java.
 
 
 ## 21.2.0 (2022-08-16)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2474,12 +2023,6 @@ Changelog of wink-sdk-java.
 
 ## v21.1.0 (2022-08-07)
 
-
-
-
-
-
-
 ### Other changes
 
 **:memo: doc: Updated CHANGELOG.md...**
@@ -2489,12 +2032,6 @@ Changelog of wink-sdk-java.
 
 
 ## 21.1.0 (2022-08-07)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2542,12 +2079,6 @@ Changelog of wink-sdk-java.
 
 ## 21.0.1 (2022-07-21)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/21.0.1'**
@@ -2587,11 +2118,6 @@ Changelog of wink-sdk-java.
 ### Breaking changes
 
 -  **WSJ-12**  Enriched the object model ([03b72](https://github.com/wink-travel/wink-sdk-java/commit/03b72b165dd8e1f) Bjorn Harvold)  
-
-
-
-
-
 
 ### Other changes
 
@@ -2634,12 +2160,6 @@ Changelog of wink-sdk-java.
 
 ## 20.2.7 (2022-07-01)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/20.2.7'**
@@ -2680,12 +2200,6 @@ Changelog of wink-sdk-java.
 
 
 ## 20.2.6 (2022-06-29)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2728,12 +2242,6 @@ Changelog of wink-sdk-java.
 
 ## 20.2.5 (2022-06-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/20.2.5'**
@@ -2769,12 +2277,6 @@ Changelog of wink-sdk-java.
 
 
 ## 20.2.4 (2022-06-20)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2817,12 +2319,6 @@ Changelog of wink-sdk-java.
 
 ## 20.2.3 (2022-06-16)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/20.2.3'**
@@ -2863,12 +2359,6 @@ Changelog of wink-sdk-java.
 
 
 ## 20.2.2 (2022-06-11)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -2911,12 +2401,6 @@ Changelog of wink-sdk-java.
 
 ## 20.2.1 (2022-06-05)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/20.2.1'**
@@ -2958,14 +2442,9 @@ Changelog of wink-sdk-java.
 
 ## 20.2.0 (2022-06-03)
 
-
-
 ### Features
 
 -  **WSJ-7**  Added exchange rate endpoint to booking engine ([66ecb](https://github.com/wink-travel/wink-sdk-java/commit/66ecb6168089e6a) Bjorn Harvold)  
-
-
-
 
 ### Other changes
 
@@ -3023,12 +2502,6 @@ Changelog of wink-sdk-java.
 
 ## 20.1.4 (2022-05-31)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/20.1.4'**
@@ -3070,12 +2543,6 @@ Changelog of wink-sdk-java.
 
 
 ## 20.1.3 (2022-05-28)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -3123,12 +2590,6 @@ Changelog of wink-sdk-java.
 
 ## 20.1.2 (2022-05-28)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/20.1.2'**
@@ -3164,12 +2625,6 @@ Changelog of wink-sdk-java.
 
 
 ## 20.1.1 (2022-05-28)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -3207,12 +2662,6 @@ Changelog of wink-sdk-java.
 
 ## 20.1.0 (2022-05-28)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/20.1.0'**
@@ -3248,12 +2697,6 @@ Changelog of wink-sdk-java.
 
 
 ## 20.0.0 (2022-05-27)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -3303,12 +2746,6 @@ Changelog of wink-sdk-java.
 
 ## 19.0.17 (2022-05-27)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/19.0.17'**
@@ -3356,12 +2793,6 @@ Changelog of wink-sdk-java.
 
 
 ## 19.0.15 (2022-05-26)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -3420,12 +2851,6 @@ Changelog of wink-sdk-java.
 
 ## 19.0.13 (2022-05-24)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/19.0.13'**
@@ -3471,12 +2896,6 @@ Changelog of wink-sdk-java.
 
 
 ## 19.0.11 (2022-05-23)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -3554,12 +2973,6 @@ Changelog of wink-sdk-java.
 
 ## 0.0.15 (2022-05-22)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/0.0.15'**
@@ -3600,12 +3013,6 @@ Changelog of wink-sdk-java.
 
 
 ## 0.0.13 (2022-05-22)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -3652,12 +3059,6 @@ Changelog of wink-sdk-java.
 
 
 ## 0.0.11 (2022-05-22)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -3715,12 +3116,6 @@ Changelog of wink-sdk-java.
 
 ## 0.0.9 (2022-05-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/0.0.9'**
@@ -3757,12 +3152,6 @@ Changelog of wink-sdk-java.
 
 ## 0.0.8 (2022-05-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/0.0.8'**
@@ -3798,12 +3187,6 @@ Changelog of wink-sdk-java.
 
 
 ## 0.0.7 (2022-05-20)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -3848,12 +3231,6 @@ Changelog of wink-sdk-java.
 
 ## 0.0.6 (2022-05-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/0.0.6'**
@@ -3896,12 +3273,6 @@ Changelog of wink-sdk-java.
 
 
 ## 0.0.5 (2022-05-20)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -3946,12 +3317,6 @@ Changelog of wink-sdk-java.
 
 ## 0.0.4 (2022-05-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/0.0.4'**
@@ -3993,12 +3358,6 @@ Changelog of wink-sdk-java.
 
 ## 0.0.3 (2022-05-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/0.0.3'**
@@ -4025,12 +3384,6 @@ Changelog of wink-sdk-java.
 
 ## 0.0.2 (2022-05-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **Merge branch 'release/0.0.2'**
@@ -4056,12 +3409,6 @@ Changelog of wink-sdk-java.
 
 
 ## 0.0.1 (2022-05-20)
-
-
-
-
-
-
 
 ### Other changes
 
