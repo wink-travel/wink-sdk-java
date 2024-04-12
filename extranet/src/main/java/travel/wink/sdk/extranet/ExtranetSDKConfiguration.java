@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;
-import travel.wink.sdk.extranet.api.AccessApi;
 import travel.wink.sdk.extranet.api.ActivityApi;
 import travel.wink.sdk.extranet.api.AddOnApi;
 import travel.wink.sdk.extranet.api.AffiliateApi;
@@ -24,7 +23,7 @@ import travel.wink.sdk.extranet.api.MasterRateApi;
 import travel.wink.sdk.extranet.api.MediaApi;
 import travel.wink.sdk.extranet.api.MeetingRoomApi;
 import travel.wink.sdk.extranet.api.NotificationApi;
-import travel.wink.sdk.extranet.api.OnboardingApi;
+import travel.wink.sdk.extranet.api.RegistrationApi;
 import travel.wink.sdk.extranet.api.PlaceApi;
 import travel.wink.sdk.extranet.api.PolicyApi;
 import travel.wink.sdk.extranet.api.PromotionApi;
@@ -50,11 +49,6 @@ public class ExtranetSDKConfiguration {
 	@Bean
 	public ApiClient apiClient() {
 		return new ApiClient(this.webClient);
-	}
-
-	@Bean
-	public AccessApi accessApi() {
-		return new AccessApi(apiClient());
 	}
 
 	@Bean
@@ -153,8 +147,8 @@ public class ExtranetSDKConfiguration {
 	}
 
 	@Bean
-	public OnboardingApi onboardingApi() {
-		return new OnboardingApi(apiClient());
+	public RegistrationApi onboardingApi() {
+		return new RegistrationApi(apiClient());
 	}
 
 	@Bean
