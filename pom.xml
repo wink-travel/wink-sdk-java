@@ -43,6 +43,7 @@
         <gitflow.maven.plugin>1.19.0</gitflow.maven.plugin>
         <github.release.maven.plugin.version>1.0.7</github.release.maven.plugin.version>
         <hibernate.validator.version>8.0.0.Final</hibernate.validator.version>
+        <jakarta.validation.version>3.0.2</jakarta.validation.version>
         <jackson.version>2.16.0</jackson.version>
         <jackson.databind.nullable.version>0.2.6</jackson.databind.nullable.version>
         <jackson.threetenbp.version>2.15.2</jackson.threetenbp.version>
@@ -62,7 +63,7 @@
         <maven.source.plugin.version>3.3.0</maven.source.plugin.version>
         <maven.surefire.plugin.version>3.2.3</maven.surefire.plugin.version>
         <nexus.staging.maven.plugin>1.6.13</nexus.staging.maven.plugin>
-        <openapi.generator.version>7.4.0</openapi.generator.version>
+        <openapi.generator.version>7.1.0</openapi.generator.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://s01.oss.sonatype.org/</sonatypeOssDistMgmtSnapshotsUrl>
         <spring.version>6.1.6</spring.version>
         <spring.security.version>6.2.3</spring.security.version>
@@ -394,6 +395,12 @@
             <version>${jackson.threetenbp.version}</version>
         </dependency>
 
+        <!-- JSR 303 with Hibernate Validator -->
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>${jakarta.validation.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
