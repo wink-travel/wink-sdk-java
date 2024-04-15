@@ -5,7 +5,7 @@
     <parent>
         <groupId>travel.wink</groupId>
         <artifactId>wink-sdk-java</artifactId>
-        <version>29.53.5</version>
+        <version>29.53.6</version>
     </parent>
     <artifactId>booking</artifactId>
     <packaging>jar</packaging>
@@ -27,13 +27,6 @@
                         <importMapping>java.time.OffsetDateTime=java.time.LocalDateTime</importMapping>
                         <importMapping>java.lang.Double=java.math.BigDecimal</importMapping>
                     </importMappings>
-<!--                    <configOptions>-->
-<!--                        <performBeanValidation>true</performBeanValidation>-->
-<!--                        <hideGenerationTimestamp>true</hideGenerationTimestamp>-->
-<!--                        <useBeanValidation>true</useBeanValidation>-->
-<!--                        <sourceFolder>src/main/java</sourceFolder>-->
-<!--                        <configPackage>com.example.demo.config</configPackage>-->
-<!--                    </configOptions>-->
                 </configuration>
                 <executions>
                     <execution>
@@ -62,6 +55,7 @@
                                 <useBeanValidation>true</useBeanValidation>
                                 <useGzipFeature>true</useGzipFeature>
                                 <useJakartaEe>true</useJakartaEe>
+                                <useSpringBoot3>true</useSpringBoot3>
                             </configOptions>
                         </configuration>
                     </execution>
