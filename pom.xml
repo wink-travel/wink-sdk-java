@@ -35,7 +35,7 @@
     </scm>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>22</java.version>
         <iam.wink.version>24.0.0</iam.wink.version>
         <buildnumber.maven.plugin.version>3.2.0</buildnumber.maven.plugin.version>
         <conventional-commits-maven-plugin.version>1.101.0</conventional-commits-maven-plugin.version>
@@ -65,8 +65,8 @@
         <nexus.staging.maven.plugin>1.6.13</nexus.staging.maven.plugin>
         <openapi.generator.version>7.1.0</openapi.generator.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://s01.oss.sonatype.org/</sonatypeOssDistMgmtSnapshotsUrl>
-        <spring.version>6.1.6</spring.version>
-        <spring.security.version>6.2.3</spring.security.version>
+        <spring.version>6.1.8</spring.version>
+        <spring.security.version>6.3.0</spring.security.version>
         <swagger.annotations.version>1.6.14</swagger.annotations.version>
         <swagger3.annotations.version>2.2.21</swagger3.annotations.version>
         <threeten.version>1.7.0</threeten.version>
