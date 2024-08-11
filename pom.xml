@@ -9,7 +9,7 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>wink-sdk-java</artifactId>
-    <version>30.2.1</version>
+    <version>30.3.1</version>
     <packaging>pom</packaging>
     <name>wink.travel Java SDK</name>
     <description>Java libraries for all wink APIs.</description>
@@ -76,13 +76,28 @@
 
     <modules>
         <module>affiliate</module>
+        <module>affiliate-browse</module>
+        <module>affiliate-inventory</module>
+        <module>affiliate-sales-channel</module>
+        <module>affiliate-winklinks</module>
 		<module>analytics</module>
         <module>booking</module>
         <module>channel-manager</module>
-        <module>extranet</module>
+        <module>engine-client</module>
+        <module>extranet-booking</module>
+        <module>extranet-distribution</module>
+        <module>extranet-experiences</module>
+        <module>extranet-facilities</module>
+        <module>extranet-monetize</module>
+        <module>extranet-property</module>
+        <module>extranet-property-register</module>
         <module>inventory</module>
         <module>lookup</module>
+        <module>notification</module>
+        <module>ping</module>
         <module>reference</module>
+        <module>travel-agent</module>
+        <module>user-settings</module>
     </modules>
 
     <build>
@@ -305,6 +320,13 @@
     </distributionManagement>
 
     <dependencies>
+
+        <dependency>
+            <groupId>travel.wink</groupId>
+            <artifactId>oauth2-web-client</artifactId>
+            <version>${iam.wink.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>

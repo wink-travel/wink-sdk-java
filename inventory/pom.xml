@@ -5,9 +5,9 @@
     <parent>
         <groupId>travel.wink</groupId>
         <artifactId>wink-sdk-java</artifactId>
-        <version>30.2.1</version>
+        <version>30.3.1</version>
     </parent>
-    <artifactId>inventory</artifactId>
+    <artifactId>inventory-sdk-java</artifactId>
     <packaging>jar</packaging>
     <name>Inventory SDK Java</name>
     <description>Java SDK for the Wink Inventory API</description>
@@ -69,12 +69,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>travel.wink</groupId>
-            <artifactId>oauth2-web-client</artifactId>
-            <version>${iam.wink.version}</version>
-        </dependency>
-    </dependencies>
 </project>
