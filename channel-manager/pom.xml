@@ -10,7 +10,7 @@
     <artifactId>channel-manager-sdk-java</artifactId>
     <packaging>jar</packaging>
     <name>Channel Manager SDK Java</name>
-    <description>Java SDK for the channel manager integrators wanting to communicate with the Wink platform</description>
+    <description>Java SDK for the channel manager integrators wanting to communicate with the Wink Travel Platform.</description>
 
     <build>
         <plugins>
@@ -69,12 +69,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>travel.wink</groupId>
-            <artifactId>oauth2-web-client</artifactId>
-            <version>${iam.wink.version}</version>
-        </dependency>
-    </dependencies>
 </project>

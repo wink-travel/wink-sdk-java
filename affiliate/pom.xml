@@ -68,12 +68,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>travel.wink</groupId>
-            <artifactId>oauth2-web-client</artifactId>
-            <version>${iam.wink.version}</version>
-        </dependency>
-    </dependencies>
 </project>

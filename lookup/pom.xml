@@ -7,7 +7,7 @@
         <artifactId>wink-sdk-java</artifactId>
         <version>30.2.2-SNAPSHOT</version>
     </parent>
-    <artifactId>lookup</artifactId>
+    <artifactId>lookup-sdk-java</artifactId>
     <packaging>jar</packaging>
     <name>Lookup SDK Java</name>
     <description>Java SDK for the Wink Lookup API</description>
@@ -69,12 +69,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>travel.wink</groupId>
-            <artifactId>oauth2-web-client</artifactId>
-            <version>${iam.wink.version}</version>
-        </dependency>
-    </dependencies>
 </project>
