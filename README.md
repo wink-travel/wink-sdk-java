@@ -678,4 +678,4 @@ Create 2 environment variables in your preferred way:
 
 - Wink IAM Java SDK repo: [https://github.com/wink-travel/iam-sdk-java](https://github.com/wink-travel/iam-sdk-java)
 - TripPay Java SDK repo: [https://github.com/wink-travel/trip-pay-sdk-java](https://github.com/wink-travel/trip-pay-sdk-java)
-- WordPress: [https://wordpress.org/plugins/wink2travel/](https://wordpress.org/plugins/iko-travel-affiliate/) 
+- WordPress: [https://wordpress.org/plugins/wink2travel/](https://wordpress.org/plugins/wink2travel/) 
