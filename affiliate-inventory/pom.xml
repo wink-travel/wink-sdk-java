@@ -5,7 +5,7 @@
     <parent>
         <groupId>travel.wink</groupId>
         <artifactId>wink-sdk-java</artifactId>
-        <version>30.5.15</version>
+        <version>30.5.16</version>
     </parent>
     <artifactId>affiliate-inventory-sdk-java</artifactId>
     <packaging>jar</packaging>
