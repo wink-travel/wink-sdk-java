@@ -2,6 +2,51 @@
 
 Changelog of wink-sdk-java.
 
+## 30.5.18 (2025-01-02)
+
+### Bug Fixes
+
+-  :bug: fixed issue for default enum value ([b007c](https://github.com/wink-travel/wink-sdk-java/commit/b007c1eb7272ebf) Bjorn Harvold)  
+
+### Other changes
+
+**Merge branch 'release/30.5.18'**
+
+
+[858cf](https://github.com/wink-travel/wink-sdk-java/commit/858cf13005ccb94) Bjorn Harvold *2025-01-02 08:00:42*
+
+**:bookmark: build: Updated Open API files**
+
+
+[516a1](https://github.com/wink-travel/wink-sdk-java/commit/516a1af3ff84acb) Bjorn Harvold *2025-01-02 08:00:40*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[5ee85](https://github.com/wink-travel/wink-sdk-java/commit/5ee8570dc1838cb) Bjorn Harvold *2024-12-27 01:44:08*
+
+**Update for next development version**
+
+
+[54d59](https://github.com/wink-travel/wink-sdk-java/commit/54d5934cb4db832) Bjorn Harvold *2024-12-27 01:43:45*
+
+**Merge tag '30.5.17' into develop**
+
+* Tag release 
+
+[f8bc0](https://github.com/wink-travel/wink-sdk-java/commit/f8bc031677f2c07) Bjorn Harvold *2024-12-27 01:43:43*
+
+
+## v30.5.17 (2024-12-27)
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[72fd1](https://github.com/wink-travel/wink-sdk-java/commit/72fd1be23450a2a) Bjorn Harvold *2024-12-27 01:44:03*
+
+
 ## 30.5.17 (2024-12-27)
 
 ### Other changes
