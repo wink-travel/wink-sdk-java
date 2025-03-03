@@ -37,19 +37,21 @@
     <properties>
         <java.version>23</java.version>
         <iam.wink.version>24.0.0</iam.wink.version>
-        <buildnumber.maven.plugin.version>3.2.0</buildnumber.maven.plugin.version>
-        <conventional-commits-maven-plugin.version>1.101.0</conventional-commits-maven-plugin.version>
-        <git.commit.plugin.version>7.0.0</git.commit.plugin.version>
-        <gitflow.maven.plugin>1.19.0</gitflow.maven.plugin>
-        <github.release.maven.plugin.version>1.0.7</github.release.maven.plugin.version>
-        <hibernate.validator.version>8.0.0.Final</hibernate.validator.version>
+
         <jakarta.validation.version>3.0.2</jakarta.validation.version>
-        <jackson.version>2.16.0</jackson.version>
+        <jsr305.version>3.0.2</jsr305.version>
+
+        <buildnumber.maven.plugin.version>3.2.0</buildnumber.maven.plugin.version>
+        <conventional-commits-maven-plugin.version>2.2.4</conventional-commits-maven-plugin.version>
+        <git.commit.plugin.version>9.0.1</git.commit.plugin.version>
+        <gitflow.maven.plugin>1.21.0</gitflow.maven.plugin>
+        <github.release.maven.plugin.version>1.0.7</github.release.maven.plugin.version>
+        <hibernate.validator.version>8.0.2.Final</hibernate.validator.version>
+        <jackson.version>2.18.3</jackson.version>
         <jackson.databind.nullable.version>0.2.6</jackson.databind.nullable.version>
         <jackson.threetenbp.version>2.15.2</jackson.threetenbp.version>
-        <jakarta.annotation.version>2.1.1</jakarta.annotation.version>
-        <jsr305.version>3.0.2</jsr305.version>
-        <lombok.version>1.18.30</lombok.version>
+        <jakarta.annotation.version>3.0.0</jakarta.annotation.version>
+        <lombok.version>1.18.36</lombok.version>
         <maven.assembly.plugin.version>3.3.0</maven.assembly.plugin.version>
         <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
         <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
@@ -62,16 +64,16 @@
         <maven.scm.plugin.version>2.0.1</maven.scm.plugin.version>
         <maven.source.plugin.version>3.3.0</maven.source.plugin.version>
         <maven.surefire.plugin.version>3.2.3</maven.surefire.plugin.version>
-        <nexus.staging.maven.plugin>1.6.13</nexus.staging.maven.plugin>
+        <nexus.staging.maven.plugin>1.7.0</nexus.staging.maven.plugin>
         <openapi.generator.version>7.1.0</openapi.generator.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://s01.oss.sonatype.org/</sonatypeOssDistMgmtSnapshotsUrl>
-        <spring.version>6.1.14</spring.version>
-        <spring.security.version>6.3.4</spring.security.version>
-        <swagger.annotations.version>1.6.14</swagger.annotations.version>
-        <swagger3.annotations.version>2.2.21</swagger3.annotations.version>
+        <spring.version>6.2.3</spring.version>
+        <spring.security.version>6.4.3</spring.security.version>
+        <swagger.annotations.version>1.6.15</swagger.annotations.version>
+        <swagger3.annotations.version>2.2.28</swagger3.annotations.version>
         <threeten.version>1.7.0</threeten.version>
-        <threetenbp.version>1.6.8</threetenbp.version>
-        <versions.maven.plugin>2.16.2</versions.maven.plugin>
+        <threetenbp.version>1.7.0</threetenbp.version>
+        <versions.maven.plugin>2.18.0</versions.maven.plugin>
     </properties>
 
     <modules>
