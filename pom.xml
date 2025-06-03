@@ -9,7 +9,7 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>wink-sdk-java</artifactId>
-    <version>30.5.22</version>
+    <version>30.5.23</version>
     <packaging>pom</packaging>
     <name>wink.travel Java SDK</name>
     <description>Java libraries for all wink APIs.</description>
@@ -35,12 +35,11 @@
     </scm>
 
     <properties>
-        <java.version>23</java.version>
         <iam.wink.version>24.0.0</iam.wink.version>
-
         <jakarta.validation.version>3.0.2</jakarta.validation.version>
         <jsr305.version>3.0.2</jsr305.version>
 
+        <java.version>24</java.version>
         <buildnumber.maven.plugin.version>3.2.0</buildnumber.maven.plugin.version>
         <conventional-commits-maven-plugin.version>2.2.4</conventional-commits-maven-plugin.version>
         <git.commit.plugin.version>9.0.1</git.commit.plugin.version>
@@ -49,9 +48,9 @@
         <hibernate.validator.version>8.0.2.Final</hibernate.validator.version>
         <jackson.version>2.18.3</jackson.version>
         <jackson.databind.nullable.version>0.2.6</jackson.databind.nullable.version>
-        <jackson.threetenbp.version>2.15.2</jackson.threetenbp.version>
+        <jackson.threetenbp.version>2.18.2</jackson.threetenbp.version>
         <jakarta.annotation.version>3.0.0</jakarta.annotation.version>
-        <lombok.version>1.18.36</lombok.version>
+        <lombok.version>1.18.38</lombok.version>
         <maven.assembly.plugin.version>3.3.0</maven.assembly.plugin.version>
         <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
         <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
@@ -67,12 +66,11 @@
         <nexus.staging.maven.plugin>1.7.0</nexus.staging.maven.plugin>
         <openapi.generator.version>7.1.0</openapi.generator.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://s01.oss.sonatype.org/</sonatypeOssDistMgmtSnapshotsUrl>
-        <spring.version>6.2.3</spring.version>
-        <spring.security.version>6.4.3</spring.security.version>
-        <swagger.annotations.version>1.6.15</swagger.annotations.version>
-        <swagger3.annotations.version>2.2.28</swagger3.annotations.version>
-        <threeten.version>1.7.0</threeten.version>
-        <threetenbp.version>1.7.0</threetenbp.version>
+        <spring.version>6.2.5</spring.version>
+        <spring.security.version>6.4.4</spring.security.version>
+        <swagger.annotations.version>2.2.30</swagger.annotations.version>
+        <threeten.version>1.8.0</threeten.version>
+        <threetenbp.version>1.7.1</threetenbp.version>
         <versions.maven.plugin>2.18.0</versions.maven.plugin>
     </properties>
 
@@ -368,15 +366,9 @@
         </dependency>
 
         <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-annotations</artifactId>
-            <version>${swagger.annotations.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>io.swagger.core.v3</groupId>
-            <artifactId>swagger-annotations</artifactId>
-            <version>${swagger3.annotations.version}</version>
+            <artifactId>swagger-annotations-jakarta</artifactId>
+            <version>${swagger.annotations.version}</version>
         </dependency>
 
         <!-- @Nullable annotation -->
