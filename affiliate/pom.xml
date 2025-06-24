@@ -5,12 +5,12 @@
     <parent>
         <groupId>travel.wink</groupId>
         <artifactId>wink-sdk-java</artifactId>
-        <version>30.5.23</version>
+        <version>30.5.24</version>
     </parent>
     <artifactId>affiliate-sdk-java</artifactId>
     <packaging>jar</packaging>
     <name>Affiliate SDK Java</name>
-    <description>Java SDK for the wink Affiliate API</description>
+    <description>Java SDK for the Wink Affiliate API</description>
 
     <build>
         <plugins>

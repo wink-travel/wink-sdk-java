@@ -9,10 +9,10 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>wink-sdk-java</artifactId>
-    <version>30.5.23</version>
+    <version>30.5.24</version>
     <packaging>pom</packaging>
-    <name>wink.travel Java SDK</name>
-    <description>Java libraries for all wink APIs.</description>
+    <name>Wink Java SDK</name>
+    <description>Java libraries for all of Wink APIs.</description>
 
     <developers>
         <developer>
@@ -20,7 +20,7 @@
             <name>Bjorn Harvold</name>
             <email>bjorn@wink.travel</email>
             <url>https://wink.travel</url>
-            <organization>TripPay Corporation USA</organization>
+            <organization>Wink Inc.</organization>
             <roles>
                 <role>CTO</role>
             </roles>
@@ -64,11 +64,11 @@
         <maven.source.plugin.version>3.3.0</maven.source.plugin.version>
         <maven.surefire.plugin.version>3.2.3</maven.surefire.plugin.version>
         <nexus.staging.maven.plugin>1.7.0</nexus.staging.maven.plugin>
-        <openapi.generator.version>7.1.0</openapi.generator.version>
+        <openapi.generator.version>7.13.0</openapi.generator.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://s01.oss.sonatype.org/</sonatypeOssDistMgmtSnapshotsUrl>
-        <spring.version>6.2.5</spring.version>
-        <spring.security.version>6.4.4</spring.security.version>
-        <swagger.annotations.version>2.2.30</swagger.annotations.version>
+        <spring.version>6.2.8</spring.version>
+        <spring.security.version>6.5.1</spring.security.version>
+        <swagger.annotations.version>2.2.34</swagger.annotations.version>
         <threeten.version>1.8.0</threeten.version>
         <threetenbp.version>1.7.1</threetenbp.version>
         <versions.maven.plugin>2.18.0</versions.maven.plugin>

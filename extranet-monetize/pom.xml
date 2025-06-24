@@ -5,12 +5,12 @@
     <parent>
         <groupId>travel.wink</groupId>
         <artifactId>wink-sdk-java</artifactId>
-        <version>30.5.23</version>
+        <version>30.5.24</version>
     </parent>
     <artifactId>extranet-monetize-sdk-java</artifactId>
     <packaging>jar</packaging>
     <name>Extranet Monetize SDK Java</name>
-    <description>Java SDK for the wink Extranet Monetize API</description>
+    <description>Java SDK for the Wink Extranet Monetize API</description>
 
     <build>
         <plugins>
