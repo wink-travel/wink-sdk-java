@@ -10,7 +10,7 @@
     <artifactId>extranet-experiences-sdk-java</artifactId>
     <packaging>jar</packaging>
     <name>Extranet Experiences SDK Java</name>
-    <description>Java SDK for the wink Extranet Experiences API</description>
+    <description>Java SDK for the Wink Extranet Experiences API</description>
 
     <build>
         <plugins>

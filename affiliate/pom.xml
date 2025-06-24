@@ -10,7 +10,7 @@
     <artifactId>affiliate-sdk-java</artifactId>
     <packaging>jar</packaging>
     <name>Affiliate SDK Java</name>
-    <description>Java SDK for the wink Affiliate API</description>
+    <description>Java SDK for the Wink Affiliate API</description>
 
     <build>
         <plugins>

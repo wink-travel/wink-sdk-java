@@ -10,8 +10,6 @@ This SDK contains libraries you can leverage to communicate with the Wink platfo
 ### Java Requirements
 Maven artifacts were compiled with Java 22.
 
-Spring is not required, but we highly recommend you use it. Our examples will be based on how to do it the "Spring way".
-
 Download libraries from Maven Central Repository.
 
 ### Affiliate
@@ -33,8 +31,6 @@ The Affiliate API exposes endpoints to manage affiliate accounts. This API lets 
 ```
 
 #### Usage
-
-Using Spring, @Import(AffiliateSDKConfiguration.class) or run a component scan over `travel.wink.sdk.affiliate` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - AffiliateApi: Create affiliates. 
 - AccountManagerApi: Create account managers.
@@ -62,11 +58,9 @@ The Affiliate Browse API exposes endpoints for affiliates to browse inventory. T
 
 #### Usage
 
-Using Spring, @Import(AffiliateBrowseSDKConfiguration.class) or run a component scan over `travel.wink.sdk.affiliate.browse` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - BrowseApi: Browse suppliers and invnentory. 
 - CuratedListApi: Manage curated lists.
-- SavedSearchApi: Manage saved searches.
+- DynamicListApi: Manage saved searches.
 - SearchCategoriesApi: Retrieve categories to search for.
 
 
@@ -92,8 +86,6 @@ The Affiliate Inventory API exposes endpoints for affiliates to manage the inven
 ```
 
 #### Usage
-
-Using Spring, @Import(AffiliateInventorySDKConfiguration.class) or run a component scan over `travel.wink.sdk.affiliate.inventory` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - CustomizationApi: Manage customizations. 
 - EmbeddableInventoriesApi: Mostly used by our Web Components to retrieve available inventory to embed 
@@ -126,8 +118,6 @@ The Sales Channel API exposes endpoints for affiliates to manage existing sales 
 
 #### Usage
 
-Using Spring, @Import(AffiliateSalesChannelSDKConfiguration.class) or run a component scan over `travel.wink.sdk.affiliate.sales.channel` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - AvailableSupplierApi: Browse available suppliers to connect with.
 - RelationshipRequestApi: Manage relationship requests. 
 - SalesChannelApi: Manage existing sales channels.
@@ -154,9 +144,8 @@ The WinkLinks API exposes endpoints to manage WinkLink entries, categories and s
 
 #### Usage
 
-Using Spring, @Import(AffiliateWinkLinksSDKConfiguration.class) or run a component scan over `travel.wink.sdk.affiliate.syndication` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - SyndicationPublisherApi: Manage your WinkLinks account
+- SyndicationConsumerApi: Consume WinkLinks syndicated content as a consumer
 
 
 ### Analytics
@@ -175,8 +164,6 @@ The Analytics API gives you access to time series data on a variety of data sour
 ```
 
 #### Usage
-
-Using Spring, @Import(AnalyticsSDKConfiguration.class) or run a component scan over `travel.wink.sdk.analytics` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - AnalyticsApi: Create analytics that is meaningful to you. We provide the filters, sorting mechanisms and data points you need to track everything you want on our platform.
 - LeaderboardApi: Track where you stand compared to other affiliates. The metric is bookings.
@@ -203,12 +190,10 @@ Welcome to the Booking Engine API - A programmer-friendly way to book inventory 
 
 #### Usage
 
-Using Spring, @Import(BookingSDKConfiguration.class) or run a component scan over `travel.wink.sdk.booking` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
-- ShoppingCartApi: Manage shopping cart.
-- CheckoutApi: Move shopping cart items through the payment workflow.
 - BookingApi: Manage bookings.
+- CheckoutApi: Move shopping cart items through the payment workflow.
 - ReviewApi: Leave a review after a completed stay.
+- ShoppingCartApi: Manage shopping cart.
 
 ### Channel manager
 
@@ -226,8 +211,6 @@ The Channel Manager API enables external channel manager partners to map, exchan
 ```
 
 #### Usage
-
-Using Spring, @Import(ChannelManagerSDKConfiguration.class) or run a component scan over `travel.wink.sdk.channel.manager` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - ChannelManagerApi: Everything related to pushing rates and availability as well as querying properties managed by your channel manager account with us.
 
@@ -248,8 +231,6 @@ A single endpoint to retrieve affiliate information needed to display the bookin
 ```
 
 #### Usage
-
-Using Spring, @Import(EngineClientSDKConfiguration.class) or run a component scan over `travel.wink.sdk.booking.client` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - ConfigurationApi: Load affiliate information
 
@@ -275,11 +256,9 @@ The Booking API exposes endpoints to manage bookings. This API lets you:
 
 #### Usage
 
-Using Spring, @Import(ExtranetBookingSDKConfiguration.class) or run a component scan over `travel.wink.sdk.extranet.booking` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - BookingApi: Manage bookings including cancellations.
-- ReviewApi: Manage and respond to user reviews.
 - CalendarSyncApi: Sync w. Calendar: Manage calendar sync with your favorite calendar software.
+- ReviewApi: Manage and respond to user reviews.
 
 
 ### Extranet Distribution
@@ -305,15 +284,13 @@ The Distribution API exposes endpoints for sales channels, connecting with affil
 
 #### Usage
 
-Using Spring, @Import(ExtranetDistributionSDKConfiguration.class) or run a component scan over `travel.wink.sdk.extranet.distribution` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - AffiliateApi: Browse affiliates.
 - DailyRateApi: Manage room type / rate plan rates
 - InventoryApi: Manage inventory at the sales channel-level.
 - InventoryUsageApi: Track current inventory usage.
 - SalesChannelApi: Manage sales channels.
+- SalesChannelRequestsApi: Manage affiliate relationship requests.
 - SchedulerApi: Manage availability for all non-room type inventory.
-- SalesChannelRelationshipRequestsApi: Manage affiliate relationship requests.
 
 
 ### Extranet Experiences
@@ -336,8 +313,6 @@ This part of the documentation concerns itself with the management of experience
 ```
 
 #### Usage
-
-Using Spring, @Import(ExtranetExperiencesSDKConfiguration.class) or run a component scan over `travel.wink.sdk.extranet.experiences` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - ActivityApi: Manage activities on and off the premises.
 - AttractionApi: Manage attractions on and off the premises.
@@ -365,8 +340,6 @@ This part of the documentation concerns itself with the management of facilities
 ```
 
 #### Usage
-
-Using Spring, @Import(ExtranetFacilitiesSDKConfiguration.class) or run a component scan over `travel.wink.sdk.extranet.facilities` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - GuestRoomApi: Manage room types on and off the premises.
 - MeetingRoomApi: Manage meeting rooms on and off the premises.
@@ -397,8 +370,6 @@ This part of the documentation concerns itself with the management of cancellati
 ```
 
 #### Usage
-
-Using Spring, @Import(ExtranetMonetizeSDKConfiguration.class) or run a component scan over `travel.wink.sdk.extranet.monetize` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - AddOnApi: Manage add-ons.
 - CancellationPolicyApi: Manage cancellation policies for your property.
@@ -438,8 +409,6 @@ This part of the documentation concerns itself with basic property management. I
 
 #### Usage
 
-Using Spring, @Import(ExtranetPropertySDKConfiguration.class) or run a component scan over `travel.wink.sdk.extranet.property` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - AnnouncementApi: Manage announcements to travelers in a pop-up window.
 - ChannelManagerApi: Set channel manager
 - GeoLocationApi: Set property geo-location.
@@ -472,8 +441,6 @@ This part of the documentation concerns itself about adding new properties to Wi
 
 #### Usage
 
-Using Spring, @Import(ExtranetPropertyRegisterSDKConfiguration.class) or run a component scan over `travel.wink.sdk.extranet.property.register` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - ManageLeadsApi: Manage leads.
 - PropertyRegistrationApi: Create properties.
 
@@ -499,8 +466,6 @@ The Inventory API exposes endpoints to retrieve inventory you already know about
 
 #### Usage
 
-Using Spring, @Import(InventorySDKConfiguration.class) or run a component scan over `travel.wink.sdk.inventory` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - InventoryApi: Everything related to querying property availability.
 - ShareableLinkApi: Consume shareable links.
 
@@ -522,8 +487,6 @@ The Lookup API exposes endpoints to search for inventory by region, type. It's t
 
 #### Usage
 
-Using Spring, @Import(LookupSDKConfiguration.class) or run a component scan over `travel.wink.sdk.lookup` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - LookupApi: Everything related to querying for best priced room types using various filter mechanisms
 
 
@@ -543,8 +506,6 @@ The Notifications API is a way for us to stay in touch with your user, property 
 ```
 
 #### Usage
-
-Using Spring, @Import(NotificationSDKConfiguration.class) or run a component scan over `travel.wink.sdk.notification` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - NotificationApi: Retrieve platform notifications.
 
@@ -566,8 +527,6 @@ Easy way to test your credentials.
 
 #### Usage
 
-Using Spring, @Import(PingSDKConfiguration.class) or run a component scan over `travel.wink.sdk.ping` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - PingApi: Test connection with Wink.
 
 
@@ -588,9 +547,8 @@ The Reference API exposes endpoints related to supported taxonomies of reference
 
 #### Usage
 
-Using Spring, @Import(ReferenceSDKConfiguration.class) or run a component scan over `travel.wink.sdk.reference` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - GeoDataApi: Find geo-name lookup data from geonames.org.
+- RateProviderApi: Supported rate providers. These are onces Wink has integrated with and vice versa. 
 - ReferenceApi: Everything related to structured datasets and their meaning. E.g. OTA Room View Code list
 
 
@@ -613,8 +571,6 @@ The Travel Agent API exposes endpoints to manage agent-facilitated bookings. Thi
 ```
 
 #### Usage
-
-Using Spring, @Import(TravelAgentSDKConfiguration.class) or run a component scan over `travel.wink.sdk.travel.agent` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
 
 - TravelAgentApi: Create agents and manage bookings.
 
@@ -641,8 +597,6 @@ The User Settings API exposes endpoints to allow 3rd party integrators to commun
 
 #### Usage
 
-Using Spring, @Import(UserSettingsSDKConfiguration.class) or run a component scan over `travel.wink.sdk.user.settings` and `travel.wink.sdk.support`. That will give you access to the following Spring Beans:
-
 - ApplicationApi: Manage 3rd party access to Wink.
 - BucketListApi: Manage your bucket list on Wink.
 - UserSettingsApi: Manage user settings.
@@ -652,7 +606,7 @@ Using Spring, @Import(UserSettingsSDKConfiguration.class) or run a component sca
 ## Configuration
 You will need a client ID and a client secret to communicate with any of the Wink platform endpoints. You can create your account and get your credentials here:
 
-[https://sell.wink.travel](https://sell.wink.travel)
+[https://studio.wink.travel](https://studio.wink.travel)
 
 Steps: 
 1. Register your personal user account
