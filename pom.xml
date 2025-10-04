@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>9</version>
-    </parent>
+<!--    <parent>-->
+<!--        <groupId>org.sonatype.oss</groupId>-->
+<!--        <artifactId>oss-parent</artifactId>-->
+<!--        <version>9</version>-->
+<!--    </parent>-->
     <groupId>travel.wink</groupId>
     <artifactId>wink-sdk-java</artifactId>
-    <version>30.5.29</version>
+    <version>30.5.30</version>
     <packaging>pom</packaging>
     <name>Wink Java SDK</name>
     <description>Java libraries for all of Wink APIs.</description>
@@ -39,18 +39,19 @@
         <jakarta.validation.version>3.0.2</jakarta.validation.version>
         <jsr305.version>3.0.2</jsr305.version>
 
-        <java.version>24</java.version>
+        <java.version>25</java.version>
         <buildnumber.maven.plugin.version>3.2.0</buildnumber.maven.plugin.version>
+        <central.publishing.maven.plugin.version>0.9.0</central.publishing.maven.plugin.version>
         <conventional-commits-maven-plugin.version>2.2.4</conventional-commits-maven-plugin.version>
         <git.commit.plugin.version>9.0.1</git.commit.plugin.version>
         <gitflow.maven.plugin>1.21.0</gitflow.maven.plugin>
         <github.release.maven.plugin.version>1.0.7</github.release.maven.plugin.version>
         <hibernate.validator.version>8.0.2.Final</hibernate.validator.version>
-        <jackson.version>2.18.3</jackson.version>
-        <jackson.databind.nullable.version>0.2.6</jackson.databind.nullable.version>
+        <jackson.version>2.20.0</jackson.version>
+        <jackson.databind.nullable.version>0.2.7</jackson.databind.nullable.version>
         <jackson.threetenbp.version>2.18.2</jackson.threetenbp.version>
         <jakarta.annotation.version>3.0.0</jakarta.annotation.version>
-        <lombok.version>1.18.38</lombok.version>
+        <lombok.version>1.18.42</lombok.version>
         <maven.assembly.plugin.version>3.3.0</maven.assembly.plugin.version>
         <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
         <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
@@ -66,12 +67,47 @@
         <nexus.staging.maven.plugin>1.7.0</nexus.staging.maven.plugin>
         <openapi.generator.version>7.13.0</openapi.generator.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://s01.oss.sonatype.org/</sonatypeOssDistMgmtSnapshotsUrl>
-        <spring.version>6.2.8</spring.version>
-        <spring.security.version>6.5.1</spring.security.version>
-        <swagger.annotations.version>2.2.34</swagger.annotations.version>
+        <spring.version>6.2.11</spring.version>
+        <spring.security.version>6.5.5</spring.security.version>
+        <swagger.annotations.version>2.2.38</swagger.annotations.version>
         <threeten.version>1.8.0</threeten.version>
-        <threetenbp.version>1.7.1</threetenbp.version>
+        <threetenbp.version>1.7.2</threetenbp.version>
         <versions.maven.plugin>2.18.0</versions.maven.plugin>
+
+<!--        -->
+<!--        <java.version>24</java.version>-->
+<!--        <buildnumber.maven.plugin.version>3.2.0</buildnumber.maven.plugin.version>-->
+<!--        <conventional-commits-maven-plugin.version>2.2.4</conventional-commits-maven-plugin.version>-->
+<!--        <git.commit.plugin.version>9.0.1</git.commit.plugin.version>-->
+<!--        <gitflow.maven.plugin>1.21.0</gitflow.maven.plugin>-->
+<!--        <github.release.maven.plugin.version>1.0.7</github.release.maven.plugin.version>-->
+<!--        <hibernate.validator.version>8.0.2.Final</hibernate.validator.version>-->
+<!--        <jackson.version>2.18.3</jackson.version>-->
+<!--        <jackson.databind.nullable.version>0.2.6</jackson.databind.nullable.version>-->
+<!--        <jackson.threetenbp.version>2.18.2</jackson.threetenbp.version>-->
+<!--        <jakarta.annotation.version>3.0.0</jakarta.annotation.version>-->
+<!--        <lombok.version>1.18.38</lombok.version>-->
+<!--        <maven.assembly.plugin.version>3.3.0</maven.assembly.plugin.version>-->
+<!--        <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>-->
+<!--        <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>-->
+<!--        <maven.dependency.plugin.version>3.2.0</maven.dependency.plugin.version>-->
+<!--        <maven.deploy.plugin.version>3.1.1</maven.deploy.plugin.version>-->
+<!--        <maven.gpg.version>3.0.1</maven.gpg.version>-->
+<!--        <maven.javadoc.plugin.version>3.6.3</maven.javadoc.plugin.version>-->
+<!--        <maven.release.plugin.version>3.0.1</maven.release.plugin.version>-->
+<!--        <maven.resources.plugin.version>3.3.1</maven.resources.plugin.version>-->
+<!--        <maven.scm.plugin.version>2.0.1</maven.scm.plugin.version>-->
+<!--        <maven.source.plugin.version>3.3.0</maven.source.plugin.version>-->
+<!--        <maven.surefire.plugin.version>3.2.3</maven.surefire.plugin.version>-->
+<!--        <nexus.staging.maven.plugin>1.7.0</nexus.staging.maven.plugin>-->
+<!--        <openapi.generator.version>7.13.0</openapi.generator.version>-->
+<!--        <sonatypeOssDistMgmtSnapshotsUrl>https://s01.oss.sonatype.org/</sonatypeOssDistMgmtSnapshotsUrl>-->
+<!--        <spring.version>6.2.8</spring.version>-->
+<!--        <spring.security.version>6.5.1</spring.security.version>-->
+<!--        <swagger.annotations.version>2.2.34</swagger.annotations.version>-->
+<!--        <threeten.version>1.8.0</threeten.version>-->
+<!--        <threetenbp.version>1.7.1</threetenbp.version>-->
+<!--        <versions.maven.plugin>2.18.0</versions.maven.plugin>-->
     </properties>
 
     <modules>
@@ -152,28 +188,39 @@
                 </configuration>
             </plugin>
 
+<!--            <plugin>-->
+<!--                <groupId>org.sonatype.plugins</groupId>-->
+<!--                <artifactId>nexus-staging-maven-plugin</artifactId>-->
+<!--                <version>${nexus.staging.maven.plugin}</version>-->
+<!--                <extensions>true</extensions>-->
+<!--                <configuration>-->
+<!--                    <serverId>ossrh</serverId>-->
+<!--                    <nexusUrl>${sonatypeOssDistMgmtSnapshotsUrl}</nexusUrl>-->
+<!--                    <autoReleaseAfterClose>true</autoReleaseAfterClose>-->
+<!--                    <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>default-deploy</id>-->
+<!--                        <phase>deploy</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>deploy</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+
             <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>${nexus.staging.maven.plugin}</version>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>${central.publishing.maven.plugin.version}</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>${sonatypeOssDistMgmtSnapshotsUrl}</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                    <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
+                    <publishingServerId>central</publishingServerId>
+                    <autoPublish>true</autoPublish>
                 </configuration>
-                <executions>
-                    <execution>
-                        <id>default-deploy</id>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>deploy</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
-
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
