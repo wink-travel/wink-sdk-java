@@ -2,17 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-<!--    <parent>-->
-<!--        <groupId>org.sonatype.oss</groupId>-->
-<!--        <artifactId>oss-parent</artifactId>-->
-<!--        <version>9</version>-->
-<!--    </parent>-->
     <groupId>travel.wink</groupId>
     <artifactId>wink-sdk-java</artifactId>
     <version>30.5.32-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Wink Java SDK</name>
     <description>Java libraries for all of Wink APIs.</description>
+    <inceptionYear>2013</inceptionYear>
+
+    <organization>
+        <name>wink.travel</name>
+        <url>https://wink.travel</url>
+    </organization>
 
     <developers>
         <developer>
@@ -224,13 +225,21 @@
                     <failOnError>false</failOnError>
                     <failOnWarnings>false</failOnWarnings>
                 </configuration>
-                <extensions>true</extensions>
                 <executions>
+                    <!-- Execution to generate Javadoc HTML files -->
                     <execution>
                         <id>generate-javadoc-json</id>
                         <phase>compile</phase>
                         <goals>
                             <goal>javadoc-no-fork</goal>
+                        </goals>
+                    </execution>
+                    <!-- Execution to package Javadoc into a JAR -->
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
