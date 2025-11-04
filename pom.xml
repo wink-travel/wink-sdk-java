@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>travel.wink</groupId>
     <artifactId>wink-sdk-java</artifactId>
-    <version>30.5.32</version>
+    <version>30.5.33</version>
     <packaging>pom</packaging>
     <name>Wink Java SDK</name>
     <description>Java libraries for all of Wink APIs.</description>
