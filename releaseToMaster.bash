@@ -22,7 +22,7 @@ echo "Setting the next snapshot version to $newVersion"
 
 mvn versions:set -DnewVersion="$newVersion" -DgenerateBackupPoms=false
 
-git commit -a -m ":bookmark: build: Updated Open API files"
+git commit -a -m ":bookmark: build: Updated Open API files [no ci]"
 
 echo "Starting release process..."
 
@@ -40,7 +40,7 @@ git checkout master
 
 echo "Updating CHANGELOG.md..."
 mvn git-changelog-maven-plugin:git-changelog
-git commit -a -m ":memo: doc: Updated CHANGELOG.md..."
+git commit -a -m ":memo: doc: Updated CHANGELOG.md... [no ci]"
 
 git push origin master:refs/heads/master
 
@@ -50,7 +50,7 @@ gh release create v$newVersion --notes "See CHANGELOG.md for release notes" --ta
 git checkout develop
 
 echo "Merging CHANGELOG.md from master..."
-git merge master --no-edit -m ":twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch" --strategy-option theirs
+git merge master --no-edit -m ":twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch [no ci]" --strategy-option theirs
 
 echo "Pushing develop to origin"
 git push origin develop:refs/heads/develop
