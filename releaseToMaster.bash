@@ -26,7 +26,7 @@ git commit -a -m ":bookmark: build: Updated Open API files [no ci]"
 
 echo "Starting release process..."
 
-mvn -B gitflow:release-start gitflow:release-finish -DskipTestProject=true
+mvn -B gitflow:release-start gitflow:release-finish -DskipTestProject=true -DcommitMessagePrefix="[no ci] "
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
   echo "Something went wrong on line: ${BASH_LINENO[*]}"
