@@ -12,6 +12,33 @@ git pull
 
 git checkout develop
 
+# --- Pre-flight conflict guard (run BEFORE the gitflow release/merge) ---
+# The maven gitflow plugin merges develop into master at release. If develop has
+# diverged (a previous release's back-merge was lost, or commits landed straight
+# on master), that merge CONFLICTS and breaks the release. Detect it here, in
+# memory: `git merge-tree` never touches the working tree (requires git >= 2.38).
+echo "==> Pre-flight: checking develop merges into master without conflicts..."
+if git merge-base --is-ancestor master develop; then
+  echo "OK: master already contained in develop -- release merge will be clean"
+elif _gtout=$(git merge-tree --write-tree --name-only develop master 2>/dev/null); then
+  echo "WARN: develop diverged from master but merges cleanly -- proceeding."
+  git --no-pager log --oneline master ^develop | sed 's/^/     /'
+else
+  echo ""
+  echo "RELEASE STOPPED -- develop must be reconciled with master first."
+  echo "   Merging 'develop' into 'master' would CONFLICT and break the release."
+  echo "   Conflicting files:"
+  printf '%s\n' "$_gtout" | tail -n +2 | sed 's/^/     - /'
+  echo ""
+  echo "   Reconcile develop first, then re-run:"
+  echo "     git checkout develop && git merge master   # resolve toward develop, commit"
+  echo "     git push origin develop"
+  echo ""
+  echo "   Commits on master missing from develop:"
+  git --no-pager log --oneline master ^develop | sed 's/^/     /'
+  exit 1
+fi
+
 # grab latest spec files from production servers
 ./downloadLatestOpenApiSpecs.bash
 
