@@ -7,8 +7,14 @@
 echo "Releasing wink-sdk-java..."
 
 echo "Sync-ing remote master with local"
+# --- release hardening: never let an ambient pull.rebase=true / pull.ff turn a
+# sync-pull into a history-rewriting rebase or surprise merge. Pin every pull to
+# fast-forward-only so a diverged shared branch FAILS LOUDLY instead of silently
+# rebasing a just-finished release onto origin. Overrides personal git config. ---
+git config --local pull.ff only
+git config --local pull.rebase false
 git checkout master
-git pull
+git pull --ff-only
 
 git checkout develop
 
